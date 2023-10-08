@@ -1,0 +1,28 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+[Google Scholar Page](https://scholar.google.com/citations?user=8ihSLrwAAAAJ&hl=en)
+
+**Linearity of Relation Decoding in Transformer LMs**<br>
+Evan Hernandez<sup>\*</sup>, **Arnab Sen Sharma**<sup>\*</sup>, Tal Haklay, Kevin Meng, Martin Wattenberg, Jacob Andreas, Yonatan Belinkov, David Bau.<br>
+Preprint on arxiv. [[pdf]](https://browse.arxiv.org/pdf/2308.09124.pdf), [[project page]](https://lre.baulab.info/), [[code]](https://github.com/evandez/relations)
+
+**Mass-Editing Memory in a Transformer**<br>
+Kevin Meng, **Arnab Sen Sharma**, Alex Andonian, Yonatan Belinkov, David Bau. <br>
+ICLR 2023 (top 25% paper). [[pdf]](https://browse.arxiv.org/pdf/2210.07229.pdf), [[project page]](https://memit.baulab.info/).
+
+**Augmenting Online Classes with an Attention Tracking Tool May Improve Student Engagement** <br>
+**Arnab Sen Sharma**, Mohammad Ruhul Amin, and Muztaba Fuad. <br>
+HCII-2023 [[pdf]](https://browse.arxiv.org/pdf/2210.07286.pdf)
+
+**BD-SHS: A Benchmark Dataset for Learning to Detect Online Bangla Hate Speech in Different Social Contexts** <br>
+Nauros Romim, Mosahed Ahmed, Md. Saiful Islam, **Arnab Sen Sharma**, Hriteshwar Talukder, Mohammad Ruhul Amin <br>
+LREC 2022. [[pdf]](https://browse.arxiv.org/pdf/2206.00372.pdf)
+
+**Challenges in Tracking the Risk of COVID-19 in Bangladesh: Evaluation of A Novel Method**
+Md. Enamul Haque, Md. Shariful Islam, **Arnab Sen Sharma**, Rashedul Islam, and Mohammad Ruhul Amin <br>
+KDD Workshop on Data-driven Humanitarian Mapping, 2021. [[pdf]](https://www.medrxiv.org/content/10.1101/2021.08.03.21261567v1.full.pdf)
