@@ -7,11 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a PhD student in the [Interpretable Neural Networks](https://baulab.info/) lab at Northeastern University, Boston. I am fortunate to be advised by [Prof. David Bau](https://www.khoury.northeastern.edu/people/david-bau/).
+I am a PhD student in the [Interpretable Neural Networks](https://baulab.info/) lab at Northeastern University, Boston. I am extremely fortunate to be advised by [Prof. David Bau](https://www.khoury.northeastern.edu/people/david-bau/).
 
-I am particularly interested in ***how*** LLMs encode real world knowledge in their representations. Also, can we ***localize*** the parameters containing a knowledge in the model and ***edit*** those parameters to change/update the LLMs beliefs about the world? 
+<p style="text-align: justify">
+I am interested in understanding the inner workings of large language models; such as, <b><i>how</i></b> they encode factual and functional (task-specific) information in their representations, what computation is performed at different states. And, how such understandings will help us develop tools to fix bugs (bias, false/outdated factual associations) in LLMs and control their behavior with the goal of making them safer and more reliable.
+</p>
 
-Before graduate school, I earned my bachalor's degree in Computer Science from Shahjalal University of Science and Technology. I also taught in the same department for a while [\[faculty profile\]](https://www.sust.edu/d/cse/faculty-profile-detail/700). I also worked for Samsung R&D as a software engineer for a year.  
+<!-- <p style="text-align: justify">
+Before graduate school, I earned my bachalor's degree in Computer Science from Shahjalal University of Science and Technology, Bangladesh. I also taught in the same department for a while. I also worked for Samsung R&D Institute as a software engineer for a year.
+</p> -->
 
 Email: [sensharma.a@northeastern.edu](mailto:sensharma.a@northeastern.edu)
 
