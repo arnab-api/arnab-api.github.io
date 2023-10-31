@@ -1,11 +1,16 @@
 ---
 layout: archive
-title: "Research"
+title: "Publications"
 permalink: /research/
 author_profile: true
 ---
 
 [Google Scholar Page](https://scholar.google.com/citations?user=8ihSLrwAAAAJ&hl=en)
+
+**Function Vectors in Large Language Models**<br>
+Eric Todd, Millicent L Li, **Arnab Sen Sharma**, Aaron Mueller, Byron C Wallace, David Bau
+<br>
+Preprint on arxiv. [[pdf]](https://arxiv.org/pdf/2310.15213.pdf), [[project page]](https://functions.baulab.info/), [[code]](https://github.com/ericwtodd/function_vectors)
 
 **Linearity of Relation Decoding in Transformer LMs**<br>
 Evan Hernandez<sup>\*</sup>, **Arnab Sen Sharma**<sup>\*</sup>, Tal Haklay, Kevin Meng, Martin Wattenberg, Jacob Andreas, Yonatan Belinkov, David Bau.<br>

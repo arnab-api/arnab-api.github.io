@@ -17,9 +17,11 @@ I am interested in understanding the inner workings of large language models; su
 Before graduate school, I earned my bachalor's degree in Computer Science from Shahjalal University of Science and Technology, Bangladesh. I also taught in the same department for a while. I also worked for Samsung R&D Institute as a software engineer for a year.
 </p> -->
 
-Email: [sensharma.a@northeastern.edu](mailto:sensharma.a@northeastern.edu)
+<!-- Email: [sensharma.a@northeastern.edu](mailto:sensharma.a@northeastern.edu) -->
 
 # News
+
+* [October-23-2023] Another paper! [Function Vectors in Large Language Models](https://arxiv.org/pdf/2310.15213.pdf). In this cool paper we show that LLMs encode *functions* (input-output mappings under a relation, or for performing a certain task, like translation) as a vector in their representation. Checkout [this](https://twitter.com/ericwtodd/status/1717277426873766104) Twitter thread for more information.
 
 * [August-17-2023] New paper! [Linearity of Relation Decoding in Transformer LMs](https://browse.arxiv.org/pdf/2308.09124.pdf).  In this paper we show that for a subset of relations LLMs (highly non-linear) relation decoding procedure can be well-approximated by a single linear transformation (LRE) on the subject representation after some intermediate layer. And this LRE can be achived by constructing a first-order approximation to the LLM computation from a single input. Fine more at [project page](https://lre.baulab.info/), [\[code\]](https://github.com/evandez/relations)
 
