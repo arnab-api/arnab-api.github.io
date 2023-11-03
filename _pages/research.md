@@ -28,6 +28,6 @@ HCII-2023 [[pdf]](https://browse.arxiv.org/pdf/2210.07286.pdf)
 Nauros Romim, Mosahed Ahmed, Md. Saiful Islam, **Arnab Sen Sharma**, Hriteshwar Talukder, Mohammad Ruhul Amin <br>
 LREC 2022. [[pdf]](https://browse.arxiv.org/pdf/2206.00372.pdf)
 
-**Challenges in Tracking the Risk of COVID-19 in Bangladesh: Evaluation of A Novel Method**
+**Challenges in Tracking the Risk of COVID-19 in Bangladesh: Evaluation of A Novel Method** <br>
 Md. Enamul Haque, Md. Shariful Islam, **Arnab Sen Sharma**, Rashedul Islam, and Mohammad Ruhul Amin <br>
 KDD Workshop on Data-driven Humanitarian Mapping, 2021. [[pdf]](https://www.medrxiv.org/content/10.1101/2021.08.03.21261567v1.full.pdf)
