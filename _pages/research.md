@@ -14,6 +14,7 @@ Preprint on arxiv. [[pdf]](https://arxiv.org/pdf/2310.15213.pdf), [[project page
 
 **Linearity of Relation Decoding in Transformer LMs**<br>
 Evan Hernandez<sup>\*</sup>, **Arnab Sen Sharma**<sup>\*</sup>, Tal Haklay, Kevin Meng, Martin Wattenberg, Jacob Andreas, Yonatan Belinkov, David Bau.<br>
+<sup> \* </sup> *Equal contribution* <br>
 Preprint on arxiv. [[pdf]](https://browse.arxiv.org/pdf/2308.09124.pdf), [[project page]](https://lre.baulab.info/), [[code]](https://github.com/evandez/relations)
 
 **Mass-Editing Memory in a Transformer**<br>
