@@ -7,6 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+<center style="color:#b35900 ;font-size:12px">
+<i> 
+  "A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it"
+</i> <br>
+ - First Law of Mentat, Dune, Frank Herbert
+</center>
+<br>
+
 I am a PhD student in the [Interpretable Neural Networks](https://baulab.info/) lab at Northeastern University, Boston. I am extremely fortunate to be advised by [Prof. David Bau](https://www.khoury.northeastern.edu/people/david-bau/).
 
 <p style="text-align: justify">
