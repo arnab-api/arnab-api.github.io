@@ -10,12 +10,12 @@ author_profile: true
 **Function Vectors in Large Language Models**<br>
 Eric Todd, Millicent L Li, **Arnab Sen Sharma**, Aaron Mueller, Byron C Wallace, David Bau
 <br>
-Preprint on arxiv. [[pdf]](https://arxiv.org/pdf/2310.15213.pdf), [[project page]](https://functions.baulab.info/), [[code]](https://github.com/ericwtodd/function_vectors)
+ICLR 2024. [[pdf]](https://arxiv.org/pdf/2310.15213.pdf), [[project page]](https://functions.baulab.info/), [[code]](https://github.com/ericwtodd/function_vectors)
 
 **Linearity of Relation Decoding in Transformer LMs**<br>
 Evan Hernandez<sup>\*</sup>, **Arnab Sen Sharma**<sup>\*</sup>, Tal Haklay, Kevin Meng, Martin Wattenberg, Jacob Andreas, Yonatan Belinkov, David Bau.<br>
 <sup> \* </sup> *Equal contribution* <br>
-Preprint on arxiv. [[pdf]](https://browse.arxiv.org/pdf/2308.09124.pdf), [[project page]](https://lre.baulab.info/), [[code]](https://github.com/evandez/relations)
+ICLR 2024 (Spotlight!). [[pdf]](https://browse.arxiv.org/pdf/2308.09124.pdf), [[project page]](https://lre.baulab.info/), [[code]](https://github.com/evandez/relations)
 
 **Mass-Editing Memory in a Transformer**<br>
 Kevin Meng, **Arnab Sen Sharma**, Alex Andonian, Yonatan Belinkov, David Bau. <br>

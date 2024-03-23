@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-<center style="color:#b35900 ;font-size:12px">
+<!-- <center style="color:#b35900 ;font-size:12px">
 <i> 
   "A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it"
 </i> <br>
  - First Law of Mentat, Dune, Frank Herbert
 </center>
-<br>
+<br> -->
 
 I am a PhD student in the [Interpretable Neural Networks](https://baulab.info/) lab at Northeastern University, Boston. I am extremely fortunate to be advised by [Prof. David Bau](https://www.khoury.northeastern.edu/people/david-bau/).
 
@@ -30,9 +30,9 @@ Before graduate school, I earned my bachalor's degree in Computer Science from S
 
 # News
 
-* [October-23-2023] Another paper! [Function Vectors in Large Language Models](https://arxiv.org/pdf/2310.15213.pdf). In this cool paper we show that LLMs encode *functions* (input-output mappings under a relation, or for performing a certain task, like translation) as a vector in their representation. Checkout [this](https://twitter.com/ericwtodd/status/1717277426873766104) Twitter thread for more information.
+* [October-23-2023] Another paper! [Function Vectors in Large Language Models](https://arxiv.org/pdf/2310.15213.pdf). In this cool paper we show that LLMs encode *functions* (input-output mappings under a relation, or for performing a certain task, like translation) as a vector in their representation. Checkout [this](https://twitter.com/ericwtodd/status/1717277426873766104) Twitter thread for more information. (Update: Accepted at ICLR 2024!)
 
-* [August-17-2023] New paper! [Linearity of Relation Decoding in Transformer LMs](https://browse.arxiv.org/pdf/2308.09124.pdf).  In this paper we show that for a subset of relations LLMs (highly non-linear) relation decoding procedure can be well-approximated by a single linear transformation (LRE) on the subject representation after some intermediate layer. And this LRE can be achived by constructing a first-order approximation to the LLM computation from a single input. Fine more at [project page](https://lre.baulab.info/), [\[code\]](https://github.com/evandez/relations)
+* [August-17-2023] New paper! [Linearity of Relation Decoding in Transformer LMs](https://browse.arxiv.org/pdf/2308.09124.pdf).  In this paper we show that for a subset of relations LLMs (highly non-linear) relation decoding procedure can be well-approximated by a single linear transformation (LRE) on the subject representation after some intermediate layer. And this LRE can be achived by constructing a first-order approximation to the LLM computation from a single input. Fine more at [project page](https://lre.baulab.info/), [\[code\]](https://github.com/evandez/relations) (Update: Accepted at ICLR 2024! **Spotlight!**)
 
 * [January-20-2023] Our paper [Mass-Editing Memory in a Transformer](https://memit.baulab.info/) has been accepted at ICLR 2023 (top 25%)!
 
