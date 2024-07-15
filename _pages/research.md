@@ -5,7 +5,16 @@ permalink: /research/
 author_profile: true
 ---
 
+I have been fortunate to work with some amazing people over the years that have helped me grow as a researcher. Here are some of the papers I have worked on:
+
+
 [Google Scholar Page](https://scholar.google.com/citations?user=8ihSLrwAAAAJ&hl=en)
+
+
+**Locating and Editing Factual Associations in Mamba**<br>
+**Arnab Sen Sharma**, David Atkinson, David Bau
+<br>
+COLM 2024. [[pdf]](https://arxiv.org/pdf/2404.03646), [[project page]](https://romba.baulab.info/), [[code]](https://github.com/arnab-api/romba)
 
 **Function Vectors in Large Language Models**<br>
 Eric Todd, Millicent L Li, **Arnab Sen Sharma**, Aaron Mueller, Byron C Wallace, David Bau
