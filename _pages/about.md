@@ -18,20 +18,33 @@ redirect_from:
 
 I am a PhD student in the [Interpretable Neural Networks](https://baulab.info/) lab at Northeastern University, Boston. I am fortunate to be advised by [Prof. David Bau](https://www.khoury.northeastern.edu/people/david-bau/).
 
-<p style="text-align: justify">
+<!-- <p style="text-align: justify">
 Broadly, I am interested in understanding the inner workings of large language models. Specifically, my research focuses on understanding what factual informations (<a href="https://en.wikipedia.org/wiki/Bayesian_network" target="_blank">belief</a>s about the real world) the LMs has learned, how LMs store this information in their parameters, how this information is retrieved during inference to inform their decision making process. Also, I am interested in how this findings can help us detect bugs (bias, false/outdated associations) in LMs and develop tools to steer their behavior with the goal of making them more reliable.
+</p> -->
+
+<p style="text-align: justify">
+My research focuses on understanding what factual informations (<a href="https://en.wikipedia.org/wiki/Bayesian_network" target="_blank">belief</a>s about the real world) a language model has learned, how the LM stores this information in its parameters, and how this information is retrieved. Below are some of the key questions I am exploring:
+</p>
+
+* <p style="text-align: justify">How to edit a factual association with appropriate entailments?</p>
+* <p style="text-align: justify">How can we enable the LMs to do <a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank">System-2</a> reasoning? Is CoT enough or the only way?</p>
+
+<p style="text-align: justify">
+Broadly, I am interested in understanding the inner workings of large language models. And how such findings can help us detect bugs (bias, false/outdated associations) in LMs and develop tools to steer their behavior with the goal of making them more reliable.
 </p>
 
 <p style="text-align: justify">
-Before starting my PhD, I have worked as a Software Engineer at <a href="https://research.samsung.com/" target="_blank">Samsung Research</a> and used to teach at <a href="https://www.sust.edu/d/cse/faculty-profile-detail/700" target="_blank">Shahjalal University of Science and Technology</a>, from where I have completed my B.Sc. in Computer Science and Engineering.
+Before starting my PhD, I was a Software Engineer at <a href="https://research.samsung.com/" target="_blank">Samsung Research</a> and used to teach at <a href="https://www.sust.edu/d/cse/faculty-profile-detail/700" target="_blank">Shahjalal University of Science and Technology</a>, from where I have completed my B.Sc. in Computer Science and Engineering.
 </p>
 
-<p style="text-align: justify"><i>
-Feel free to reach out to me if you would like to chat about research, collaboration, or if you have any questions about my work. I am always looking for new opportunities to collaborate and learn from others.
+<p style="text-align: junsity"><i>
+Feel free to reach out to me if you would like to chat about research, collaboration, or if you have any questions about my work.
 </i></p>
 
 
 # News
+
+<!-- * [October-7-2024] Attending MATS 7.0 -->
 
 * [July-1-2024] Serving as a reviewer for NeurIPS 2024. Excited to see many interesting works on interpretability, some of them directly building upon works from our lab!
 
