@@ -1,6 +1,18 @@
 ---
 layout: archive
 title: "CV"
+permalink: ../files/Arnab_Sen_Sharma.pdf
+author_profile: true
+redirect_from:
+  - /cv/
+---
+
+{% include base_path %}
+
+
+<!-- ---
+layout: archive
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -61,4 +73,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
