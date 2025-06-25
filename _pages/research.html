@@ -1,0 +1,289 @@
+---
+layout: archive
+title: "Selected Publications"
+permalink: /research/
+author_profile: true
+---
+
+<style>
+    .paper-card {
+        display: flex;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid var(--global-border-color);
+        border-radius: 1px;
+        background-color: var(--global-bg-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .paper-card:hover {
+        transform: translateY(-0.5px);
+        box-shadow: 0 8px 20px var(--global-shadow-color);
+    }
+
+    .paper-image {
+        flex: 0 0 400px;
+        margin-right: 20px;
+    }
+
+    .paper-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        background-color: white;
+        /* border-radius: 1px; */
+        border: 1px solid var(--global-border-color);
+        aspect-ratio: 2/1;
+    }
+
+    .paper-content {
+        flex: 1;
+    }
+
+    .paper-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--global-text-color);
+        margin-bottom: 8px;
+        line-height: 1.3;
+    }
+
+    .paper-authors {
+        color: var(--global-text-color);
+        margin-bottom: 8px;
+        font-size: 0.95em;
+    }
+
+    .paper-venue {
+        color: var(--global-text-color);
+        margin-bottom: 15px;
+        font-style: italic;
+        font-size: 0.9em;
+    }
+
+    .paper-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 4px 16px;
+        text-decoration: none !important;
+        border-radius: 2px;
+        font-size: 0.85em;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: 1.5px solid var(--global-text-color) !important;
+        cursor: pointer;
+        background: transparent !important;
+        color: var(--global-text-color) !important;
+        display: inline-block;
+    }
+
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+        color: var(--global-link-color) !important;
+        border-color: var(--global-link-color) !important;
+        text-decoration: none !important;
+    }
+
+    .scholar-link {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .scholar-link a {
+        background-color: #4285f4;
+        color: beige;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .scholar-link a:hover {
+        background-color: #3367d6;
+    }
+
+    .intro-text {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        color: var(--global-text-color);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 968px) {
+        .paper-card {
+            flex-direction: column;
+        }
+
+        .paper-image {
+            flex: none;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        .paper-links {
+            justify-content: center;
+        }
+    }
+</style>
+
+<div class="intro-text">
+    Please checkout my <a href="https://scholar.google.com/citations?user=8ihSLrwAAAAJ&hl=en" target="_blank">Google
+        Scholar</a> profile for a complete list of my publications.
+</div>
+
+<!-- <div class="scholar-link">
+    <a href="https://scholar.google.com/citations?user=8ihSLrwAAAAJ&hl=en" target="_blank">Google Scholar Page</a>
+</div> -->
+
+<div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/ndif.png" alt="Nnsight and ndif: Democratizing access to foundation model internals"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Nnsight and ndif: Democratizing access to foundation model internals</div>
+        <div class="paper-authors">Jaden Fiotto-Kaufman, Alexander R Loftus, Eric Todd, Jannik Brinkmann, Caden Juang,
+            Koyena Pal, Can Rager, Aaron Mueller, Samuel Marks, <strong>Arnab Sen Sharma</strong>, Francesca Lucchetti,
+            Michael Ripa,
+            Adam Belfki, Nikhil Prakash, Sumeet Multani, Carla Brodley, Arjun Guha, Jonathan Bell, Byron Wallace, David
+            Bau</div>
+        <div class="paper-venue">ICLR 2025</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2407.14561" class="btn" target="_blank">PDF</a>
+            <a href="https://ndif.us/" class="btn" target="_blank">Project Page</a>
+            <!-- <a href="https://github.com/arnab-api/romba" class="btn" target="_blank">Code</a> -->
+        </div>
+    </div>
+</div>
+
+<div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/mamba-editing.jpg" alt="Locating and Editing Factual Associations in Mamba"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Locating and Editing Factual Associations in Mamba</div>
+        <div class="paper-authors"><strong>Arnab Sen Sharma</strong>, David Atkinson, David Bau</div>
+        <div class="paper-venue">COLM 2024</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2404.03646" class="btn" target="_blank">PDF</a>
+            <a href="https://romba.baulab.info/" class="btn" target="_blank">Project Page</a>
+            <a href="https://github.com/arnab-api/romba" class="btn" target="_blank">Code</a>
+        </div>
+    </div>
+</div>
+
+<div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/function-vectors.png" alt="Function Vectors in Large Language Models"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Function Vectors in Large Language Models</div>
+        <div class="paper-authors">Eric Todd, Millicent L Li, <strong>Arnab Sen Sharma</strong>, Aaron Mueller, Byron C
+            Wallace, David Bau</div>
+        <div class="paper-venue">ICLR 2024</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2310.15213.pdf" class="btn" target="_blank">PDF</a>
+            <a href="https://functions.baulab.info/" class="btn" target="_blank">Project Page</a>
+            <a href="https://github.com/ericwtodd/function_vectors" class="btn" target="_blank">Code</a>
+        </div>
+    </div>
+</div>
+
+<div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/lre.png" alt="Linearity of Relation Decoding in Transformer LMs"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Linearity of Relation Decoding in Transformer LMs</div>
+        <div class="paper-authors">Evan Hernandez<sup>*</sup>, <strong>Arnab Sen Sharma</strong><sup>*</sup>, Tal
+            Haklay, Kevin Meng, Martin Wattenberg, Jacob Andreas, Yonatan Belinkov, David Bau<br>
+            <sup>*</sup> <em>Equal contribution</em>
+        </div>
+        <div class="paper-venue">ICLR 2024 (Spotlight!)</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2308.09124" class="btn" target="_blank">PDF</a>
+            <a href="https://lre.baulab.info/" class="btn" target="_blank">Project Page</a>
+            <a href="https://github.com/evandez/relations" class="btn" target="_blank">Code</a>
+        </div>
+    </div>
+</div>
+
+<div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/memit.png" alt="Mass-Editing Memory in a Transformer"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Mass-Editing Memory in a Transformer</div>
+        <div class="paper-authors">Kevin Meng, <strong>Arnab Sen Sharma</strong>, Alex Andonian, Yonatan Belinkov, David
+            Bau</div>
+        <div class="paper-venue">ICLR 2023 (top 25% paper)</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2210.07229.pdf" class="btn" target="_blank">PDF</a>
+            <a href="https://memit.baulab.info/" class="btn" target="_blank">Project Page</a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/attention-tracking.png" alt="Augmenting Online Classes with an Attention Tracking Tool"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Augmenting Online Classes with an Attention Tracking Tool May Improve Student
+            Engagement</div>
+        <div class="paper-authors"><strong>Arnab Sen Sharma</strong>, Mohammad Ruhul Amin, and Muztaba Fuad</div>
+        <div class="paper-venue">HCII-2023</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2210.07286" class="btn" target="_blank">PDF</a>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/bd-shs.png"
+            alt="BD-SHS: A Benchmark Dataset for Learning to Detect Online Bangla Hate Speech"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">BD-SHS: A Benchmark Dataset for Learning to Detect Online Bangla Hate Speech in
+            Different Social Contexts</div>
+        <div class="paper-authors">Nauros Romim, Mosahed Ahmed, Md. Saiful Islam, <strong>Arnab Sen Sharma</strong>,
+            Hriteshwar Talukder, Mohammad Ruhul Amin</div>
+        <div class="paper-venue">LREC 2022</div>
+        <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2206.00372.pdf" class="btn" target="_blank">PDF</a>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="paper-card">
+    <div class="paper-image">
+        <img src="/images/papers/covid-tracking.png" alt="Challenges in Tracking the Risk of COVID-19 in Bangladesh"
+            onerror="this.src='/images/papers/default-paper.png'">
+    </div>
+    <div class="paper-content">
+        <div class="paper-title">Challenges in Tracking the Risk of COVID-19 in Bangladesh: Evaluation of A Novel Method
+        </div>
+        <div class="paper-authors">Md. Enamul Haque, Md. Shariful Islam, <strong>Arnab Sen Sharma</strong>, Rashedul
+            Islam, and Mohammad Ruhul Amin</div>
+        <div class="paper-venue">KDD Workshop on Data-driven Humanitarian Mapping, 2021</div>
+        <div class="paper-links">
+            <a href="https://www.medrxiv.org/content/10.1101/2021.08.03.21261567v1.full.pdf" class="btn"
+                target="_blank">PDF</a>
+        </div>
+    </div>
+</div> -->

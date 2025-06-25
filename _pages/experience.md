@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ##  **Lecturer** at [Dept. of CSE, Shahjalal University of Science and Technology, Bangladesh](https://www.sust.edu/d/cse)
-Kindly checkout my [faculty profile](https://www.sust.edu/d/cse/faculty-profile-detail/700) at SUST.<br>
+Kindly checkout my [faculty profile](https://www.sust.edu/departments/cse/faculty/arnab-cse@sust.edu) at SUST.<br>
 
 * Taught courses include,
     * Software Engineering and Design Patterns (CSE 331-332)
@@ -18,16 +18,14 @@ Kindly checkout my [faculty profile](https://www.sust.edu/d/cse/faculty-profile-
 
 
 ##  **Research Associate** at Natural Language Processing research groups, SUST
-* Member of a panel that wrote a project proposal entitled <i>”A BiLSTM based Deep Learning Approach for Hate Speech Detection in Bangla Text and a Benchmark Dataset for Hate Speech in Bangla”</i>. The proposed project won a research grant worth <b style="color:#00004d; font-family:'Times New Roman'">2,30,000 BDT</b> from SUST Research Center (Project ID; <b style="font-family:verdana">AS/2020/1/26)</b>.
+* Member of a panel that wrote a project proposal entitled <i>”A BiLSTM based Deep Learning Approach for Hate Speech Detection in Bangla Text and a Benchmark Dataset for Hate Speech in Bangla”</i> (Project ID; <b>AS/2020/1/26)</b>.
 * Advising undergrad students who are conducting research in Data Science and Machine Learning related domains.
 * Conducted workshops on basic Data‐Science and Machine Learning to train up undergrad students of CSE department, SUST for their final year research work.
 
 ## Software Engineer at [Samsung R&D Institute Bangladesh](https://research.samsung.com/srbd)
 * Worked on a Robot Simulation Project. 
-    * Coded the core features of Object Detection for robot navigation using <b style="font-family:verdana">YOLOv3</b>.
-    * Baby-Crying sound detection on Android devices using <b style="font-family:verdana">Tensorflow-lite</b>.
-* Implemented some features of Chromium-efl for Tizen wearable (<b style="font-family:verdana">C++</b>).
-* Designed and developed apps for Android platform (<b style="font-family:verdana">Java</b>).
-* Designed and developed apps for Tizen platform (<b style="font-family:verdana">C++</b>).
-* Built sensor data collection apps for Android Smartphones and Tizen watches.
-* Research on unique gesture detection on Android Smartphones and Tizen watches.
+    * IDeveloped core object detection capabilities for autonomous robot navigation using <b>YOLOv3</b>, improving navigation accuracy and obstacle avoidance.
+    * Built and deployed sound pattern recognition system on Android devices using <b>Tensorflow-lite</b>
+* Implemented some features of Chromium-efl for Tizen wearable devices (<b>C++</b>).
+* Designed and developed apps for Android platform (<b>Java</b>), focusing on sensor data collection and analysis.
+* Research on unique gesture detection on Android Smartphones and Tizen watches (<b>C++</b>).

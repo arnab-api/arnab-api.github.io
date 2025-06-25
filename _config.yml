@@ -30,7 +30,7 @@ author:
   bio: "AI researcher exploring the inner workings of LLMs"
   location: "Boston, MA"
   employer: "Northeastern University"
-  uri: https://www.khoury.northeastern.edu/people/arnab-sen-sharma/
+  # uri: https://www.khoury.northeastern.edu/people/arnab-sen-sharma/
   email: "sensharma.a@northeastern.edu"
 
   # Academic websites

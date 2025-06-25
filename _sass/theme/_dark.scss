@@ -12,7 +12,9 @@ $background : #474747;
 $background-light : mix(#fff, $background, 80%);
 $background-lighter : mix(#fff, $background, 90%);
 $text : #ffffff;
-$link : #FF8C00;
+// $link : #c96e00;
+// $link: #b2d8d8;
+$link: #ffafaf;
 $link-dark : mix(#000, $link, 25%);
 $link-light : mix(#fff, $link, 25%);
 
@@ -51,4 +53,5 @@ html[data-theme="dark"] {
     --global-text-color : #{$text};
     --global-text-color-light : #{$light-gray};
     --global-thead-color : #{$background-lighter};
+    --global-shadow-color: rgba(255, 255, 255, 0.35)
 }
