@@ -55,12 +55,81 @@ Feel free to reach out to me if you would like to chat about research, collabora
 <!-- * [October-7-2024] Attending MATS 7.0 -->
 
 <table style="border: none; font-size: 16px;">
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>07/2024</strong></td><td style="border: none;">Serving as a reviewer for NeurIPS 2024. Excited to see many interesting works on interpretability, some of them directly building upon works from our lab!</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>06/2024</strong></td><td style="border: none;">Serving as a reviewer for COLM 2024.</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>04/2024</strong></td><td style="border: none;">New paper, <a href="https://arxiv.org/pdf/2404.03646">Locating and Editing Factual Associations in Mamba</a>. <a href="https://github.com/state-spaces/mamba">Mamba</a> is a new generation of sequence modeling architecture that achives per-parameter performance with Transformers in multiple modalities, including language modeling. With the development of such novel architectures, we interpretability researchers must ask - To what extent our insights on certain mechanism (at a high-level) generalize across different architectures? This paper is a case study where we apply the tools developed for understanding and editing factual associations in Transformers to Mamba and check if the insights generalize. Fine more at <a href="https://romba.baulab.info/">project page</a>, <a href="https://github.com/arnab-api/romba">[code]</a>. (Update: Accepted at <strong>COLM 2024</strong>!)</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>10/2023</strong></td><td style="border: none;">Another paper! <a href="https://arxiv.org/pdf/2310.15213.pdf">Function Vectors in Large Language Models</a>. In this cool paper we show that LLMs encode <em>functions</em> (input-output mappings under a relation, or for performing a certain task, like translation) as a vector in their representation. Checkout <a href="https://twitter.com/ericwtodd/status/1717277426873766104">this</a> Twitter thread for more information. (Update: Accepted at <strong>ICLR 2024</strong>!)</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>08/2023</strong></td><td style="border: none;">New paper! <a href="https://browse.arxiv.org/pdf/2308.09124.pdf">Linearity of Relation Decoding in Transformer LMs</a>. In this paper we show that for a subset of relations LLMs (highly non-linear) relation decoding procedure can be well-approximated by a single linear transformation (LRE) on the subject representation after some intermediate layer. And this LRE can be achived by constructing a first-order approximation to the LLM computation from a single input. Fine more at <a href="https://lre.baulab.info/">project page</a>, <a href="https://github.com/evandez/relations">[code]</a> (Update: Accepted at <strong>ICLR 2024</strong>!)</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>01/2023</strong></td><td style="border: none;">Our paper <a href="https://memit.baulab.info/">Mass-Editing Memory in a Transformer</a> has been accepted at <strong>ICLR 2023</strong> (top 25%)!</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>10/2022</strong></td><td style="border: none;">New paper! <a href="https://memit.baulab.info/">Mass-Editing Memory in a Transformer</a>. Here we scale up <a href="https://rome.baulab.info/">ROME</a> to edit upto 10K memories in a LLM. Find more at <a href="https://memit.baulab.info/">project page</a>.</td></tr>
-<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>09/2022</strong></td><td style="border: none;">Starting my PhD at Northeastern University, Boston. I will be working with <a href="https://www.khoury.northeastern.edu/people/david-bau/">Prof. David Bau</a> on interpretability of LLMs.</td></tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>06/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    <!-- <ul> -->
+      <li>Our new <a href="https://arxiv.org/abs/2505.14685">paper</a> investigates how LMs track the mental states of different characters in a story. Experiments show that LMs use a mechanism similar to the double pointers (**) in C++! Checkout Nikhil's <a href="https://x.com/nikhil07prakash/status/1937542573641597335">Twitter thread</a> for more details.</li>
+      <li>Serving as a reviewer for NeurIPS 2025.</li>
+    <!-- </ul> -->
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>05/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    Serving as a reviewer for COLM 2025.
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>04/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    Attended <a href="https://nenlp.github.io/spr2025/">NENLP 2025</a> at Yale.
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>03/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    Serving as a reviewer for ICML 2025.
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>01/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    The <a href="https://openreview.net/forum?id=MxbEiFRf39">NNsight and NDIF</a> paper is out! Super excited about <a href="https://ndif.us/">NDIF</a>s mission to enable interpretability research on very large neural networks.
+  </td>
+</tr>
+
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>09/2024</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    Serving as a reviewer for ICLR 2025.
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>08/2024</strong>
+  </td>
+  <td style="border: none; text-align: left;">
+    Interpretability researchers are still trying to understand what is the right level of abstraction for conceptualizing neural network computations. Our <a href="https://arxiv.org/pdf/2408.01416">new survay paper</a> proposes a perspective this grounded on causal mediation analysis.
+  </td>
+</tr>
+
+
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>07/2024</strong></td><td style="border: none; text-align: left;">Serving as a reviewer for NeurIPS 2024. Excited to see many interesting works on interpretability, some of them directly building upon works from our lab!</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>06/2024</strong></td><td style="border: none; text-align: left;">Serving as a reviewer for COLM 2024.</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>04/2024</strong></td><td style="border: none; text-align: left;">New paper, <a href="https://arxiv.org/pdf/2404.03646">Locating and Editing Factual Associations in Mamba</a>. <a href="https://github.com/state-spaces/mamba">Mamba</a> is a new generation of sequence modeling architecture that achives per-parameter performance with Transformers in multiple modalities, including language modeling. With the development of such novel architectures, we interpretability researchers must ask - To what extent our insights on certain mechanism (at a high-level) generalize across different architectures? This paper is a case study where we apply the tools developed for understanding and editing factual associations in Transformers to Mamba and check if the insights generalize. Fine more at <a href="https://romba.baulab.info/">project page</a>, <a href="https://github.com/arnab-api/romba">[code]</a>. (Update: Accepted at <strong>COLM 2024</strong>!)</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>10/2023</strong></td><td style="border: none; text-align: left;">Another paper! <a href="https://arxiv.org/pdf/2310.15213.pdf">Function Vectors in Large Language Models</a>. In this cool paper we show that LLMs encode <em>functions</em> (input-output mappings under a relation, or for performing a certain task, like translation) as a vector in their representation. Checkout <a href="https://twitter.com/ericwtodd/status/1717277426873766104">this</a> Twitter thread for more information. (Update: Accepted at <strong>ICLR 2024</strong>!)</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>08/2023</strong></td><td style="border: none; text-align: left;">New paper! <a href="https://browse.arxiv.org/pdf/2308.09124.pdf">Linearity of Relation Decoding in Transformer LMs</a>. In this paper we show that for a subset of relations LLMs (highly non-linear) relation decoding procedure can be well-approximated by a single linear transformation (LRE) on the subject representation after some intermediate layer. And this LRE can be achived by constructing a first-order approximation to the LLM computation from a single input. Fine more at <a href="https://lre.baulab.info/">project page</a>, <a href="https://github.com/evandez/relations">[code]</a> (Update: Accepted at <strong>ICLR 2024</strong>!)</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>01/2023</strong></td><td style="border: none; text-align: left;">Our paper <a href="https://memit.baulab.info/">Mass-Editing Memory in a Transformer</a> has been accepted at <strong>ICLR 2023</strong> (top 25%)!</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>10/2022</strong></td><td style="border: none; text-align: left;">New paper! <a href="https://memit.baulab.info/">Mass-Editing Memory in a Transformer</a>. Here we scale up <a href="https://rome.baulab.info/">ROME</a> to edit upto 10K memories in a LLM. Find more at <a href="https://memit.baulab.info/">project page</a>.</td></tr>
+<tr><td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;"><strong>09/2022</strong></td><td style="border: none; text-align: left;">Starting my PhD at Northeastern University, Boston. I will be working with <a href="https://www.khoury.northeastern.edu/people/david-bau/">Prof. David Bau</a> on interpretability of LLMs.</td></tr>
 </table>
