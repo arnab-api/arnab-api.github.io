@@ -23,9 +23,10 @@ Kindly checkout my [faculty profile](https://www.sust.edu/departments/cse/facult
 * Conducted workshops on basic Data‐Science and Machine Learning to train up undergrad students of CSE department, SUST for their final year research work.
 
 ## Software Engineer at [Samsung R&D Institute Bangladesh](https://research.samsung.com/srbd)
-* Worked on a Robot Simulation Project. 
-    * IDeveloped core object detection capabilities for autonomous robot navigation using <b>YOLOv3</b>, improving navigation accuracy and obstacle avoidance.
+* Implemented core features for adapting *chromium* for Samsung wearables operating on Tizen OS. I specifically focused on *multimedia* components and *V8* JavaScript engine performance.
+* Implemented cross-platform file sharing protocols in Samsung Files app, enabling seamless network transfers between Android devices.
+* Designed and developed apps for Android smartphones, focusing on sensor data collection and analysis.
+* Developed gesture-based authentication and action-binding systems for Android and Tizen wearables.
+* Lead developper on a robot similation project that won [3rd place]("https://github.com/arnab-api/Online-Courses-Certificates-and-Exercise-Files-/blob/master/robot%20hackathon.jpg") in the Samsung Research ROBOT HACKATHON 2018.
+    * Developed core object detection capabilities for autonomous robot navigation using <b>YOLOv3</b>, improving navigation accuracy and obstacle avoidance.
     * Built and deployed sound pattern recognition system on Android devices using <b>Tensorflow-lite</b>
-* Implemented some features of Chromium-efl for Tizen wearable devices (<b>C++</b>).
-* Designed and developed apps for Android platform (<b>Java</b>), focusing on sensor data collection and analysis.
-* Research on unique gesture detection on Android Smartphones and Tizen watches (<b>C++</b>).
