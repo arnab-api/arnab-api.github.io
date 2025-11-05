@@ -69,6 +69,17 @@ Feel free to reach out to me if you would like to chat about research, collabora
     <strong>10/2025</strong>
   </td>
   <td style="border: none; text-align: left;">
+    New paper! <a href="https://arxiv.org/pdf/2510.26784">LLMs Process Lists With General Filter Heads</a>. How do LMs filter from a list of items? We find that LLMs use surprisingly elegant mechanisms, similar to the classic filter function in programming languages. They can implement the same filter operation using 2 mechanisms based on what information is available: (1) <strong>Lazy Evaluation:</strong>: when the question comes after the list, the LM uses special attention heads. (2) <strong>Eager Evaluation:</strong> when the question is known before the list, the LM can eagerly evaluate each item if they satisfy the criteria and store the intermediate result as a flag in the item representations.
+    <br>
+    Checkout the <a href="https://filter-heads.baulab.info/">project page</a> for more details! And, here is the <a href="https://x.com/arnab_api/status/1985740900820271168">Twitter thread</a> for a quick summary.
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align: left; vertical-align: top; padding-right: 20px; border: none;">
+    <strong>10/2025</strong>
+  </td>
+  <td style="border: none; text-align: left;">
     Serving as a reviewer for ICLR 2026.
   </td>
 </tr>
