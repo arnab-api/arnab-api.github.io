@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 excerpt: "About me"
+description: "Arnab Sen Sharma - AI Researcher and PhD Candidate at Northeastern University specializing in mechanistic interpretability of Large Language Models (LLMs)."
 author_profile: true
 redirect_from: 
   - /about/
