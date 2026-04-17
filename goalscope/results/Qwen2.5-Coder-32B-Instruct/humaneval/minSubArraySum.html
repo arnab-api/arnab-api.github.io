@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — minSubArraySum (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — minSubArraySum (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 85 &#x27;\n&#x27;: ```python
+return min(arr)
+```
+```python
+return min(arr)
+```">↵
+</span><span class="ps-tok token operator" data-tip="pos 86 &#x27;&lt;&#x27;: Sure, here is the code snippet:
+
+```python
+result = x + y
+```
+
+This line of code adds two numbers, `x` and `">&lt;</span><span class="ps-tok" data-tip="pos 87 &#x27;code&#x27;: Sure, here&#x27;s a brief snippet:
+
+```python
+result = sum(map(lambda x: x**2, [1, 2, 3,">code</span><span class="ps-tok token operator" data-tip="pos 88 &#x27;&gt;\n&#x27;: To find the minimum value in an array, you can use the following Python code:
+
+```python
+def find_min_value(arr):
+    return min(arr)
+``">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 89 &#x27;def&#x27;: To find the minimum sum of any contiguous subarray within an array, iterate through the array while keeping track of the current minimum sum encountered. Initialize a variable to">def</span><span class="ps-tok" data-tip="pos 90 &#x27; min&#x27;: I&#x27;m finding the minimum sum of any contiguous subarray within the given array."> min</span><span class="ps-tok" data-tip="pos 91 &#x27;Sub&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array.">Sub</span><span class="ps-tok" data-tip="pos 92 &#x27;Array&#x27;: I&#x27;m finding the minimum sum of any contiguous subarray within the given array.">Array</span><span class="ps-tok" data-tip="pos 93 &#x27;Sum&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array.">Sum</span><span class="ps-tok" data-tip="pos 94 &#x27;(nums&#x27;: I&#x27;m identifying the minimum subarray sum using a single pass through the array with Kadane&#x27;s algorithm.">(nums</span><span class="ps-tok" data-tip="pos 95 &#x27;):\n&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray using Kadane&#x27;s algorithm. Here&#x27;s a concise version:
+
+```python
+def min_subarray_sum(nums">):↵
+</span><span class="ps-tok" data-tip="pos 96 &#x27;   &#x27;: I&#x27;m finding the minimum sum of any contiguous subarray using Kadane&#x27;s algorithm.">   </span><span class="ps-tok token string" data-tip="pos 97 &#x27; &quot;&quot;&quot;&#x27;: I&#x27;m identifying the minimum value in an array using a single pass algorithm, specifically Kadane&#x27;s algorithm for finding the maximum subarray sum with a slight modification to"> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 98 &#x27;F&#x27;: I&#x27;m finding the minimum value in an array using a simple algorithm. Here&#x27;s the code:
+
+```python
+def find_min(arr):
+    return min(arr)">F</span><span class="ps-tok" data-tip="pos 99 &#x27;inds&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within a given array.">inds</span><span class="ps-tok" data-tip="pos 100 &#x27; the&#x27;: Finding the minimum sum of any contiguous subarray within an array to determine the smallest possible sum of any contiguous subarray."> the</span><span class="ps-tok" data-tip="pos 101 &#x27; minimum&#x27;: I&#x27;m identifying the smallest sum of any contiguous subarray within the given array, focusing on finding the minimum sum of any contiguous subarray."> minimum</span><span class="ps-tok" data-tip="pos 102 &#x27; sum&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array."> sum</span><span class="ps-tok" data-tip="pos 103 &#x27; of&#x27;: I&#x27;m identifying the smallest sum of any contiguous subarray within the given array."> of</span><span class="ps-tok" data-tip="pos 104 &#x27; any&#x27;: I&#x27;m identifying the smallest sum of any contiguous subarray within the given array."> any</span><span class="ps-tok" data-tip="pos 105 &#x27; non&#x27;: I&#x27;m identifying the smallest subarray with the minimum sum in the given array."> non</span><span class="ps-tok" data-tip="pos 106 &#x27;-empty&#x27;: I&#x27;m identifying the smallest sum of any contiguous subarray within the given array.">-empty</span><span class="ps-tok" data-tip="pos 107 &#x27; sub&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array."> sub</span><span class="ps-tok" data-tip="pos 108 &#x27;-array&#x27;: I&#x27;m analyzing the current line of the code to determine its contribution to the overall minimum sum of any contiguous subarray.">-array</span><span class="ps-tok" data-tip="pos 109 &#x27; of&#x27;: I&#x27;m analyzing the current line of the code to determine its impact on the overall sum or minimum value."> of</span><span class="ps-tok" data-tip="pos 110 &#x27; nums&#x27;: I&#x27;m analyzing the code to find the minimum sum of any contiguous subarray."> nums</span><span class="ps-tok" data-tip="pos 111 &#x27;.&quot;&quot;&quot;\n&#x27;: I&#x27;m analyzing the provided code snippet to determine what it does, focusing on identifying the specific task it performs. Here&#x27;s a concise version:
+
+```python
+def">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 112 &#x27;   &#x27;: I&#x27;m finding the minimum sum of any contiguous subarray using Kadane&#x27;s algorithm. Here, I iterate through the array to find the smallest possible sum by keeping">   </span><span class="ps-tok" data-tip="pos 113 &#x27; min&#x27;: I&#x27;m identifying the smallest sum of any contiguous subarray within the given array by iterating through it while keeping track of the current minimum sum and updating it with the"> min</span><span class="ps-tok" data-tip="pos 114 &#x27;_sum&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array by iterating through it and keeping track of the current sum, updating it to the smallest">_sum</span><span class="ps-tok token operator" data-tip="pos 115 &#x27; =&#x27;: I&#x27;m calculating the minimum sum of any subarray within the given array, starting with the first element and expanding the window to include more elements, adjusting the minimum"> =</span><span class="ps-tok token builtin" data-tip="pos 116 &#x27; float&#x27;: I&#x27;m assuming you&#x27;re asking about a specific line in a piece of code, but without seeing the actual code, I&#x27;ll start with the first element as the"> float</span><span class="ps-tok" data-tip="pos 117 &quot;(&#x27;&quot;: I&#x27;m assuming you want the minimum possible value, so I&#x27;ll start with the first element and keep track of the smallest sum encountered. Here&#x27;s the initial value">(&#x27;</span><span class="ps-tok" data-tip="pos 118 &#x27;inf&#x27;: I&#x27;m assuming you&#x27;re asking about a specific line in a piece of code, but without seeing the code, I&#x27;ll start by considering the first element as the">inf</span><span class="ps-tok token string" data-tip="pos 119 &quot;&#x27;)\n&quot;: I&#x27;m initializing a variable to store the first element of the array and then iterating through the array while keeping track of the current sum, updating it with the minimum">&#x27;)↵
+</span><span class="ps-tok" data-tip="pos 120 &#x27;   &#x27;: I&#x27;m calculating the minimum sum of any contiguous subarray using a variation of Kadane&#x27;s algorithm, focusing on finding the smallest sum for each ending position in the">   </span><span class="ps-tok" data-tip="pos 121 &#x27; current&#x27;: I&#x27;m calculating the running sum and updating the minimum sum encountered so far."> current</span><span class="ps-tok" data-tip="pos 122 &#x27;_sum&#x27;: I&#x27;m tracking the current minimum sum of any subarray encountered so far.">_sum</span><span class="ps-tok token operator" data-tip="pos 123 &#x27; =&#x27;: I&#x27;m calculating the running sum and updating the minimum sum encountered so far."> =</span><span class="ps-tok" data-tip="pos 124 &#x27; &#x27;: I&#x27;m initializing the first element to 0 and then iterating through the array to find the minimum sum of any subarray."> </span><span class="ps-tok token number" data-tip="pos 125 &#x27;0&#x27;: I&#x27;m analyzing the current value and updating it with the minimum between the current value and the next element in the iteration.">0</span><span class="ps-tok" data-tip="pos 126 &#x27;\n&#x27;: I&#x27;m tracking the minimum sum subarray using Kadane&#x27;s algorithm. Here&#x27;s a concise version:
+
+```python
+min_sum = float(&#x27;inf&#x27;)
+current_sum">↵
+</span><span class="ps-tok" data-tip="pos 127 &#x27;   &#x27;: I&#x27;m iterating through each element in the array, updating the current sum to be the minimum of the current element or the sum of the current subarray ending at">   </span><span class="ps-tok token keyword" data-tip="pos 128 &#x27; for&#x27;: I&#x27;m calculating the sum of subarrays, focusing on the minimum sum encountered."> for</span><span class="ps-tok" data-tip="pos 129 &#x27; num&#x27;: I&#x27;m processing the current element, updating the running sum to include it, and adjusting the minimum sum encountered so far."> num</span><span class="ps-tok token keyword" data-tip="pos 130 &#x27; in&#x27;: I&#x27;m processing each element in the array, updating the current sum to be the maximum of the current element or the sum including the current element."> in</span><span class="ps-tok" data-tip="pos 131 &#x27; nums&#x27;: I&#x27;m processing the current element, updating the running sum to include it, and adjusting the minimum sum encountered so far."> nums</span><span class="ps-tok token punctuation" data-tip="pos 132 &#x27;:\n&#x27;: I&#x27;m processing the current element, updating the running sum to be the minimum of the current element or the sum including the current element.">:↵
+</span><span class="ps-tok" data-tip="pos 133 &#x27;       &#x27;: I&#x27;m tracking the minimum sum of any contiguous subarray, updating it with the current element or starting fresh from the current element if the current sum is greater than">       </span><span class="ps-tok" data-tip="pos 134 &#x27; current&#x27;: I&#x27;m updating the current sum to be the minimum of the current sum plus the next number or just the next number itself."> current</span><span class="ps-tok" data-tip="pos 135 &#x27;_sum&#x27;: I&#x27;m adding the current element to the running sum, choosing the smaller between the current element and the running sum.">_sum</span><span class="ps-tok token operator" data-tip="pos 136 &#x27; =&#x27;: I&#x27;m adding the current number to the running total, choosing the smaller of the current number and the sum of the current number plus the previous running total."> =</span><span class="ps-tok" data-tip="pos 137 &#x27; min&#x27;: I&#x27;m adding the current number to the running total, choosing the smaller of the current number and the sum of the current number and the previous running total."> min</span><span class="ps-tok" data-tip="pos 138 &#x27;(num&#x27;: I&#x27;m calculating the minimum between the current element and the sum of the current element plus the previous sum.">(num</span><span class="ps-tok token punctuation" data-tip="pos 139 &#x27;,&#x27;: I&#x27;m adding the current number to the running total, choosing the smaller of the current number or the sum including the current number.">,</span><span class="ps-tok" data-tip="pos 140 &#x27; current&#x27;: I&#x27;m adding the current element to the running total to find the minimum sum subarray."> current</span><span class="ps-tok" data-tip="pos 141 &#x27;_sum&#x27;: I&#x27;m adding the current number to the running total, choosing the smaller sum.">_sum</span><span class="ps-tok token operator" data-tip="pos 142 &#x27; +&#x27;: I&#x27;m adding the current element to the running total to find the minimum subarray sum."> +</span><span class="ps-tok" data-tip="pos 143 &#x27; num&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray to track the lowest value encountered."> num</span><span class="ps-tok token punctuation" data-tip="pos 144 &#x27;)\n&#x27;: I&#x27;m identifying the minimum subarray sum to track the lowest value encountered.">)↵
+</span><span class="ps-tok" data-tip="pos 145 &#x27;       &#x27;: I&#x27;m identifying the minimum subarray sum to find the smallest sum encountered.">       </span><span class="ps-tok" data-tip="pos 146 &#x27; min&#x27;: I&#x27;m identifying the minimum sum of any contiguous subarray within the given array."> min</span><span class="ps-tok" data-tip="pos 147 &#x27;_sum&#x27;: I&#x27;m identifying the minimum value encountered so far in the iteration.">_sum</span><span class="ps-tok token operator" data-tip="pos 148 &#x27; =&#x27;: I&#x27;m tracking the minimum value encountered so far."> =</span><span class="ps-tok" data-tip="pos 149 &#x27; min&#x27;: I&#x27;m tracking the minimum value encountered so far."> min</span><span class="ps-tok" data-tip="pos 150 &#x27;(min&#x27;: I&#x27;m identifying the minimum value encountered so far.">(min</span><span class="ps-tok" data-tip="pos 151 &#x27;_sum&#x27;: I&#x27;m tracking the minimum value encountered so far.">_sum</span><span class="ps-tok token punctuation" data-tip="pos 152 &#x27;,&#x27;: I&#x27;m tracking the minimum sum of any subarray encountered so far.">,</span><span class="ps-tok" data-tip="pos 153 &#x27; current&#x27;: I&#x27;m calculating the current minimum sum of any contiguous subarray, updating it with the smallest sum encountered so far."> current</span><span class="ps-tok" data-tip="pos 154 &#x27;_sum&#x27;: I&#x27;m identifying the minimum subarray sum encountered so far.">_sum</span><span class="ps-tok token punctuation" data-tip="pos 155 &#x27;)\n&#x27;: I&#x27;m identifying the minimum subarray sum.">)↵
+</span><span class="ps-tok" data-tip="pos 156 &#x27;   &#x27;: I&#x27;m identifying the minimum value in the list.">   </span><span class="ps-tok token keyword" data-tip="pos 157 &#x27; return&#x27;: I&#x27;m identifying the minimum value in the list."> return</span><span class="ps-tok" data-tip="pos 158 &#x27; min&#x27;: I&#x27;m identifying the minimum subarray sum."> min</span><span class="ps-tok" data-tip="pos 159 &#x27;_sum&#x27;: I&#x27;m identifying the minimum value in an array efficiently.">_sum</span><span class="ps-tok" data-tip="pos 160 &#x27;\n&#x27;: I&#x27;m not provided with any specific line of code to analyze. Please provide the code snippet.">↵
+</span><span class="ps-tok" data-tip="pos 161 &#x27;&lt;/&#x27;: I&#x27;m assuming you want me to explain a specific line of code without additional context. Here&#x27;s a concise version:
+
+```python
+def f(x):return x">&lt;/</span><span class="ps-tok" data-tip="pos 162 &#x27;code&#x27;: Sure, here&#x27;s the line of code:
+
+```python
+return result
+```">code</span><span class="ps-tok token operator" data-tip="pos 163 &#x27;&gt;&#x27;: Sure, please provide the line of code you&#x27;re referring to.">&gt;</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — serialize_bst (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — serialize_bst (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 76 &#x27;\n&#x27;: ```python
+def serialize(root):
+    def helper(root):
+        if not root:
+            return &quot;&quot;
+        return f&quot;{root.val}#{serialize(root.left)}">↵
+</span><span class="ps-tok token operator" data-tip="pos 77 &#x27;&lt;&#x27;: Sure, here is a brief snippet:
+
+```python
+def example():
+    print(&quot;def example():\n    print(\&quot;def example():\\n    print">&lt;</span><span class="ps-tok" data-tip="pos 78 &#x27;code&#x27;: Sure, here&#x27;s a brief snippet:
+
+```python
+def process_data(data):
+    return eval(&#x27;def process_data(data):\n    return eval(\&#x27;\&#x27;\&#x27;">code</span><span class="ps-tok token operator" data-tip="pos 79 &#x27;&gt;\n&#x27;: Sure, here&#x27;s a brief implementation:
+
+```python
+def serialize(root):
+    def helper(node):
+        if not node:
+            return &quot;None&quot;
+        return">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 80 &#x27;def&#x27;: I&#x27;m assuming you&#x27;re asking for a serialized representation of a tree structure using a method like preorder traversal. Here&#x27;s a brief explanation:
+
+```python
+class TreeNode">def</span><span class="ps-tok" data-tip="pos 81 &#x27; serialize&#x27;: I&#x27;m writing the value of the current node followed by a space, then recursively calling myself on the left child, and finally on the right child. If the"> serialize</span><span class="ps-tok" data-tip="pos 82 &#x27;_b&#x27;: I&#x27;m performing a pre-order traversal of a binary tree and storing the nodes&#x27; values in a list using recursion.">_b</span><span class="ps-tok" data-tip="pos 83 &#x27;st&#x27;: I&#x27;m writing the value of a node in a binary tree to a string using preorder traversal.">st</span><span class="ps-tok" data-tip="pos 84 &#x27;(root&#x27;: I&#x27;m writing a null or end-of-tree marker using a special character (often `#`) when encountering a null node during a tree traversal.">(root</span><span class="ps-tok" data-tip="pos 85 &#x27;):\n&#x27;: Executing the current operation and appending its result to a string or list, typically using recursion for tree structures or arrays. If the node is null, it appends">):↵
+</span><span class="ps-tok" data-tip="pos 86 &#x27;   &#x27;: I&#x27;m writing a string representation of a binary tree using preorder traversal. If the current node is null, I append &quot;null&quot; and a delimiter (e.g">   </span><span class="ps-tok token string" data-tip="pos 87 &#x27; &quot;&quot;&quot;&#x27;: Sure, here&#x27;s a brief explanation assuming you&#x27;re asking about serializing a binary tree to a string:
+
+```python
+def serialize(root):
+    def helper(node"> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 88 &#x27;Enc&#x27;: I&#x27;m serializing the current node&#x27;s value and recursively processing its children to create a string representation of the binary tree.">Enc</span><span class="ps-tok" data-tip="pos 89 &#x27;odes&#x27;: I&#x27;m converting the current node&#x27;s value to a string and appending it to the result string, followed by a delimiter, then recursively doing the same for the left">odes</span><span class="ps-tok" data-tip="pos 90 &#x27; a&#x27;: I&#x27;m processing a node and preparing it for serialization into a string format (typically preorder traversal)."> a</span><span class="ps-tok" data-tip="pos 91 &#x27; tree&#x27;: I&#x27;m serializing an object to a string using preorder traversal."> tree</span><span class="ps-tok" data-tip="pos 92 &#x27; to&#x27;: I&#x27;m converting the current node to a string and appending it to the result string, separated by commas."> to</span><span class="ps-tok" data-tip="pos 93 &#x27; a&#x27;: I&#x27;m converting the code into a string format (serialization)."> a</span><span class="ps-tok" data-tip="pos 94 &#x27; single&#x27;: I&#x27;m converting the code into a string format (serializing it) to prepare it for storage or transmission."> single</span><span class="ps-tok" data-tip="pos 95 &#x27; string&#x27;: I&#x27;m serializing the tree to a string using preorder traversal."> string</span><span class="ps-tok" data-tip="pos 96 &#x27;.&quot;&quot;&quot;\n&#x27;: I&#x27;m generating a string representation of the code.">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 97 &#x27;   &#x27;: I&#x27;m writing a node to a string if it&#x27;s null, appending a delimiter, and recursively calling itself on the left and right children.">   </span><span class="ps-tok token keyword" data-tip="pos 98 &#x27; def&#x27;: I&#x27;m writing the value of the node to a string and adding a delimiter if the node is null, then recursively calling itself on the left and right children."> def</span><span class="ps-tok" data-tip="pos 99 &#x27; helper&#x27;: Processing a node and appending its value to a list."> helper</span><span class="ps-tok" data-tip="pos 100 &#x27;(node&#x27;: Executing a node in a tree structure, outputting its value and recursively processing its children.">(node</span><span class="ps-tok" data-tip="pos 101 &#x27;):\n&#x27;: Executing current node value and recursively processing left and right children.">):↵
+</span><span class="ps-tok" data-tip="pos 102 &#x27;       &#x27;: Processing the current node; if it&#x27;s null, return a marker (e.g., &quot;null&quot; or &quot;#&quot;) and proceed. If not, record the node">       </span><span class="ps-tok token keyword" data-tip="pos 103 &#x27; if&#x27;: I&#x27;m writing a null value or marking an end of a node if it&#x27;s empty, then moving to the next node."> if</span><span class="ps-tok token keyword" data-tip="pos 104 &#x27; not&#x27;: Processing a node (could be null)."> not</span><span class="ps-tok" data-tip="pos 105 &#x27; node&#x27;: Processing a node? `null` node: Return &quot;N&quot;. Else: Process current node, then recursively process left and right children."> node</span><span class="ps-tok token punctuation" data-tip="pos 106 &#x27;:\n&#x27;: Executing a null or end-of-branch condition, outputting a placeholder like &quot;null&quot; or similar marker.">:↵
+</span><span class="ps-tok" data-tip="pos 107 &#x27;           &#x27;: Executing a null node; returning &quot;null&quot; or similar marker.">           </span><span class="ps-tok token keyword" data-tip="pos 108 &#x27; return&#x27;: I&#x27;m writing &quot;null&quot; followed by a delimiter (e.g., &quot;null,&quot;) to represent a null node in the tree."> return</span><span class="ps-tok token string" data-tip="pos 109 &#x27; &quot;&#x27;: `null`"> &quot;</span><span class="ps-tok" data-tip="pos 110 &#x27;null&#x27;: I&#x27;m at a null node; moving to the next.">null</span><span class="ps-tok" data-tip="pos 111 &#x27;,&quot;\n&#x27;: I&#x27;m likely at a point where a null or end-of-structure marker is needed, so I&#x27;m adding a delimiter (commonly a comma or null character">,&quot;↵
+</span><span class="ps-tok" data-tip="pos 112 &#x27;       &#x27;: Processing a node and appending its value followed by a delimiter.">       </span><span class="ps-tok token keyword" data-tip="pos 113 &#x27; return&#x27;: Processing a node and appending its value to a string, followed by a delimiter."> return</span><span class="ps-tok token builtin" data-tip="pos 114 &#x27; str&#x27;: Processing the current node&#x27;s value and moving to its left child."> str</span><span class="ps-tok" data-tip="pos 115 &#x27;(node&#x27;: I&#x27;m at a node with value `node.value`. Moving to the left child.">(node</span><span class="ps-tok" data-tip="pos 116 &#x27;.val&#x27;: Executing a node and appending its value followed by a delimiter, then recursively calling itself on the left and right children.">.val</span><span class="ps-tok token punctuation" data-tip="pos 117 &#x27;)&#x27;: Processing a node and appending its value, followed by a delimiter, then recursively processing left and right subtrees.">)</span><span class="ps-tok token operator" data-tip="pos 118 &#x27; +&#x27;: Processing a node and appending its value, then moving to the left child with a comma."> +</span><span class="ps-tok token string" data-tip="pos 119 &#x27; &quot;,&quot;&#x27;: Executing a function call and appending the result to a string, followed by a delimiter."> &quot;,&quot;</span><span class="ps-tok token operator" data-tip="pos 120 &#x27; +&#x27;: I&#x27;m writing the current node&#x27;s value, then recursively writing its left subtree, followed by its right subtree."> +</span><span class="ps-tok" data-tip="pos 121 &#x27; helper&#x27;: I&#x27;m writing the root node&#x27;s value, then recursively writing the left subtree, followed by the right subtree."> helper</span><span class="ps-tok" data-tip="pos 122 &#x27;(node&#x27;: Processing the current node&#x27;s left child.">(node</span><span class="ps-tok" data-tip="pos 123 &#x27;.left&#x27;: Executing a line of code, which could be either a function call or a return statement, followed by handling its left and right children if it&#x27;s a node in">.left</span><span class="ps-tok token punctuation" data-tip="pos 124 &#x27;)&#x27;: I&#x27;m writing the current node&#x27;s value, then moving to the left subtree.">)</span><span class="ps-tok token operator" data-tip="pos 125 &#x27; +&#x27;: Executing the current node and then moving to its left child, followed by its right child."> +</span><span class="ps-tok" data-tip="pos 126 &#x27; helper&#x27;: Executing a recursive call to traverse the left subtree."> helper</span><span class="ps-tok" data-tip="pos 127 &#x27;(node&#x27;: I&#x27;m writing a node&#x27;s value and its children recursively to a string.">(node</span><span class="ps-tok" data-tip="pos 128 &#x27;.right&#x27;: Executing a function or returning a value.">.right</span><span class="ps-tok token punctuation" data-tip="pos 129 &#x27;)\n&#x27;: Executing a function or method call, appending the result to a string, typically for serialization.">)↵
+</span><span class="ps-tok" data-tip="pos 130 &#x27;   &#x27;: I&#x27;m serializing a node into a string.">   </span><span class="ps-tok token keyword" data-tip="pos 131 &#x27; return&#x27;: I&#x27;m writing a string representation of a data structure, likely a tree or similar."> return</span><span class="ps-tok" data-tip="pos 132 &#x27; helper&#x27;: I&#x27;m writing the current node&#x27;s value and recursively processing its children."> helper</span><span class="ps-tok" data-tip="pos 133 &#x27;(root&#x27;: Executing a function or method to serialize an object into a string, typically removing the trailing newline character.">(root</span><span class="ps-tok token punctuation" data-tip="pos 134 &#x27;)\n\n&#x27;: I&#x27;m assuming you&#x27;re asking for a method to serialize a binary tree into a string. Here&#x27;s a concise way using Python:
+
+```python
+class TreeNode:">)↵
+↵
+</span><span class="ps-tok token keyword" data-tip="pos 135 &#x27;class&#x27;: I&#x27;m defining a node in a binary tree.">class</span><span class="ps-tok" data-tip="pos 136 &#x27; TreeNode&#x27;: I&#x27;m processing a node in a tree or graph structure, storing its value, and then recursively doing the same for its left and right children if they exist."> TreeNode</span><span class="ps-tok token punctuation" data-tip="pos 137 &#x27;:\n&#x27;: Executing a function or method, typically initializing an object with properties like `self`, `left`, and `right`.">:↵
+</span><span class="ps-tok" data-tip="pos 138 &#x27;   &#x27;: I&#x27;m defining a node in a binary tree with a value and pointers to left and right children.">   </span><span class="ps-tok token keyword" data-tip="pos 139 &#x27; def&#x27;: I&#x27;m defining a node in a binary tree with a value and pointers to left and right children."> def</span><span class="ps-tok" data-tip="pos 140 &#x27; __&#x27;: I&#x27;m writing a string representation of a tree structure, likely for serialization, using recursion."> __</span><span class="ps-tok" data-tip="pos 141 &#x27;init&#x27;: I&#x27;m defining a node in a binary tree with a value and optional left and right children.">init</span><span class="ps-tok" data-tip="pos 142 &#x27;__(&#x27;: I&#x27;m processing a string representation of a binary tree, converting it into a node structure.">__(</span><span class="ps-tok" data-tip="pos 143 &#x27;self&#x27;: I&#x27;m at a node with value `val`, and I&#x27;m setting its left child to `left` and right child to `right`.">self</span><span class="ps-tok token punctuation" data-tip="pos 144 &#x27;,&#x27;: I&#x27;m at a node with value `val`, and I&#x27;m currently processing it. If it&#x27;s not null, I record its value and then recursively process its">,</span><span class="ps-tok" data-tip="pos 145 &#x27; val&#x27;: I&#x27;m processing a node in a binary tree, storing its value and pointers to its left and right children."> val</span><span class="ps-tok token operator" data-tip="pos 146 &#x27;=&#x27;: I&#x27;m at a node with value `null`.">=</span><span class="ps-tok token number" data-tip="pos 147 &#x27;0&#x27;: I&#x27;m processing a node in a binary tree, setting its value and initializing its left and right children to `None`.">0</span><span class="ps-tok token punctuation" data-tip="pos 148 &#x27;,&#x27;: I&#x27;m processing a node in a binary tree, setting its value and left and right children.">,</span><span class="ps-tok" data-tip="pos 149 &#x27; left&#x27;: Executing the current line of code, which could be a node in a binary tree or part of a linked list, with left and right children/next and previous"> left</span><span class="ps-tok" data-tip="pos 150 &#x27;=None&#x27;: I&#x27;m not currently executing any code; I&#x27;m just a placeholder for potential child nodes representing the left and right children in a binary tree structure.">=None</span><span class="ps-tok token punctuation" data-tip="pos 151 &#x27;,&#x27;: I&#x27;m parsing or constructing a string representation of a tree node, typically for serialization of a binary tree.">,</span><span class="ps-tok" data-tip="pos 152 &#x27; right&#x27;: Executing the current line of code."> right</span><span class="ps-tok" data-tip="pos 153 &#x27;=None&#x27;: I&#x27;m defining a node in a binary tree with a value and optional left and right children.">=None</span><span class="ps-tok" data-tip="pos 154 &#x27;):\n&#x27;: Executing the current instruction or operation defined for that line, typically involving variable declaration or function definition with parameters.">):↵
+</span><span class="ps-tok" data-tip="pos 155 &#x27;       &#x27;: I&#x27;m defining a node in a binary tree with a value and pointers to left and right children.">       </span><span class="ps-tok" data-tip="pos 156 &#x27; self&#x27;: I&#x27;m defining a node in a binary tree with a value and pointers to left and right children."> self</span><span class="ps-tok" data-tip="pos 157 &#x27;.val&#x27;: I&#x27;m at a node with value `X`.">.val</span><span class="ps-tok token operator" data-tip="pos 158 &#x27; =&#x27;: I&#x27;m defining a node in a binary tree with a value and optional left and right children."> =</span><span class="ps-tok" data-tip="pos 159 &#x27; val&#x27;: I&#x27;m defining a node in a binary tree with a value, and pointers to left and right children."> val</span><span class="ps-tok" data-tip="pos 160 &#x27;\n&#x27;: I&#x27;m processing a node, checking if it&#x27;s null, then recursively building the tree structure by visiting left and right children.">↵
+</span><span class="ps-tok" data-tip="pos 161 &#x27;       &#x27;: I&#x27;m serializing an object into a string format.">       </span><span class="ps-tok" data-tip="pos 162 &#x27; self&#x27;: I&#x27;m setting up a node with left and right children."> self</span><span class="ps-tok" data-tip="pos 163 &#x27;.left&#x27;: I&#x27;m checking if the current node has a left child.">.left</span><span class="ps-tok token operator" data-tip="pos 164 &#x27; =&#x27;: I&#x27;m setting up a node with left and right children, typically for a binary tree."> =</span><span class="ps-tok" data-tip="pos 165 &#x27; left&#x27;: Executing the current operation or pointing to the next node in a data structure."> left</span><span class="ps-tok" data-tip="pos 166 &#x27;\n&#x27;: I&#x27;m processing the current node and recursively handling its children to convert it into a string representation suitable for tree traversal.">↵
+</span><span class="ps-tok" data-tip="pos 167 &#x27;       &#x27;: Executing a node and recording its value, then recursively processing its children in preorder.">       </span><span class="ps-tok" data-tip="pos 168 &#x27; self&#x27;: I&#x27;m parsing or constructing the current node in a tree structure during a recursive function call."> self</span><span class="ps-tok" data-tip="pos 169 &#x27;.right&#x27;: I&#x27;m parsing and constructing nodes for a binary tree.">.right</span><span class="ps-tok token operator" data-tip="pos 170 &#x27; =&#x27;: Executing the current line of code."> =</span><span class="ps-tok" data-tip="pos 171 &#x27; right&#x27;: I&#x27;m parsing or interpreting the code to understand its structure and logic."> right</span><span class="ps-tok" data-tip="pos 172 &#x27;\n&#x27;: I&#x27;m not currently executing any specific line of code.">↵
+</span><span class="ps-tok" data-tip="pos 173 &#x27;&lt;/&#x27;: I&#x27;m not currently executing any specific line of code, as I don&#x27;t have a context for where this question is being asked. If you provide the code snippet">&lt;/</span><span class="ps-tok" data-tip="pos 174 &#x27;code&#x27;: I&#x27;m not currently writing any code here.">code</span><span class="ps-tok token operator" data-tip="pos 175 &#x27;&gt;&#x27;: I&#x27;m not currently writing any code, so there&#x27;s no specific line to reference. If you provide the line of code, I can explain what it does.">&gt;</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>

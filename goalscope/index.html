@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GoalScope — Reading LLM Goals from Activations</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sidebar-w: 240px;
+    --bg-sidebar:  #0f0f1b;
+    --bg-main:     #0a0a13;
+    --bg-item:     transparent;
+    --bg-item-hover: rgba(124, 106, 247, 0.08);
+    --bg-item-sel:   rgba(124, 106, 247, 0.18);
+    --border:      #1c1c2e;
+    --accent:      #7c6af7;
+    --accent-dim:  #5548c0;
+    --text-hi:     #d4d4f0;
+    --text-mid:    #8888aa;
+    --text-lo:     #44445a;
+    --input-bg:    #16162a;
+    --select-bg:   #16162a;
+    --font-ui:   -apple-system, 'Segoe UI', system-ui, sans-serif;
+    --font-mono: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  }
+
+  html, body { height: 100%; overflow: hidden; background: var(--bg-main); color: var(--text-hi); font-family: var(--font-ui); font-size: 13px; line-height: 1.5; }
+
+  /* ── Outer wrapper: landing page on top, app below ── */
+  #root { display: flex; flex-direction: column; height: 100vh; width: 100vw; }
+
+  /* ── Landing hero ── */
+  #hero {
+    flex-shrink: 0;
+    background: var(--bg-sidebar);
+    border-bottom: 1px solid var(--border);
+    padding: 22px 28px 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-left { flex: 1; min-width: 260px; }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-hi);
+    margin-bottom: 8px;
+  }
+  .hero-logo-sub {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--text-hi);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .hero-title em { font-style: normal; color: var(--accent); }
+
+  .hero-desc {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.65;
+    /* max-width: 560px; */
+  }
+
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 11px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    color: var(--text-mid);
+    background: var(--bg-main);
+    transition: all 0.13s;
+  }
+  .hlink:hover { border-color: var(--accent-dim); color: var(--text-hi); }
+
+  .hero-how {
+    font-size: 10px;
+    color: var(--text-lo);
+    max-width: 220px;
+    text-align: right;
+    line-height: 1.55;
+  }
+
+  /* ── App layer ── */
+  #app { display: flex; flex: 1; min-height: 0; }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sb-section { padding: 12px 16px 0; flex-shrink: 0; }
+  .sb-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-lo); margin-bottom: 6px; }
+
+  #model-select, #source-select {
+    width: 100%;
+    background: var(--select-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-hi);
+    font-size: 12px;
+    font-family: var(--font-ui);
+    padding: 6px 8px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2344445a'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 24px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  #model-select:focus, #source-select:focus { border-color: var(--accent-dim); }
+  #model-select option, #source-select option { background: #1a1a2e; }
+
+  .sb-tasks { display: flex; flex-direction: column; flex: 1; overflow: hidden; padding: 12px 16px 0; min-height: 0; }
+
+  .sb-search-wrap { position: relative; margin-bottom: 8px; flex-shrink: 0; }
+  .sb-search-icon { position: absolute; left: 8px; top: 50%; transform: translateY(-50%); color: var(--text-lo); pointer-events: none; }
+
+  #task-filter {
+    width: 100%;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-hi);
+    font-size: 12px;
+    font-family: var(--font-ui);
+    padding: 6px 8px 6px 28px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  #task-filter::placeholder { color: var(--text-lo); }
+  #task-filter:focus { border-color: var(--accent-dim); }
+
+  #task-count { font-size: 10px; color: var(--text-lo); margin-bottom: 5px; flex-shrink: 0; padding-left: 1px; }
+
+  #task-list {
+    list-style: none;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+    padding-bottom: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a3e transparent;
+  }
+  #task-list::-webkit-scrollbar { width: 4px; }
+  #task-list::-webkit-scrollbar-track { background: transparent; }
+  #task-list::-webkit-scrollbar-thumb { background: #2a2a3e; border-radius: 2px; }
+
+  #task-list li {
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-mid);
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: background 0.1s, color 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
+    user-select: none;
+  }
+  #task-list li:hover { background: var(--bg-item-hover); color: var(--text-hi); }
+  #task-list li.selected { background: var(--bg-item-sel); color: var(--accent); font-weight: 500; }
+  #task-list li.hidden { display: none; }
+
+  .sb-footer {
+    padding: 10px 16px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    font-size: 10px;
+    color: var(--text-lo);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Main / iframe ── */
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: var(--bg-main); position: relative; }
+
+  #viewer { flex: 1; border: none; width: 100%; height: 100%; display: block; background: var(--bg-main); }
+
+  #empty-state {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 16px; color: var(--text-lo);
+    pointer-events: none; opacity: 1; transition: opacity 0.2s;
+    padding: 24px; text-align: center;
+  }
+  #empty-state.hidden { opacity: 0; }
+  #empty-state svg { opacity: 0.25; }
+  #empty-state h3 { font-size: 14px; font-weight: 600; color: var(--text-mid); margin-bottom: 6px; }
+  #empty-state p { font-size: 12px; line-height: 1.65; max-width: 420px; }
+</style>
+</head>
+<body>
+<div id="root">
+
+  <!-- ── Hero banner ── -->
+  <div id="hero">
+    <div class="hero-left">
+      <div class="hero-logo">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+          <circle cx="9" cy="9" r="7.5" stroke="#7c6af7" stroke-width="1.3"/>
+          <circle cx="9" cy="9" r="3.5" stroke="#7c6af7" stroke-width="1.3"/>
+          <circle cx="9" cy="9" r="1.2" fill="#7c6af7"/>
+          <line x1="1.5" y1="9" x2="4" y2="9" stroke="#7c6af7" stroke-width="1.3" stroke-linecap="round"/>
+          <line x1="14" y1="9" x2="16.5" y2="9" stroke="#7c6af7" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        GoalScope
+        <span class="hero-logo-sub">latent goal reading</span>
+      </div>
+      <div class="hero-title">Do code LLMs have <em>goals</em> before they write the first token?</div>
+      <p class="hero-desc">
+        When a programmer enters a code block, they know what it's <em>for</em> before typing. Does language models do the same?
+        We show that we can use a steering scaffold to make the LM to introspect its latents and verbalize its instrumental goals in natural language, before implementing them. This setup does not require any modification to the base-LM weights. <br>
+        Hover over the tokens below to see what the LM's immediate instrumental goal (<i>intent</i>) is.
+      </p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-links">
+        <a class="hlink" href="https://arnab-api.github.io/" target="_blank">
+          <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 1C6 4 6 12 8 15M8 1C10 4 10 12 8 15M1 8h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Research
+        </a>
+        <a class="hlink" href="https://scholar.google.com/citations?user=8ihSLrwAAAAJ" target="_blank">
+          <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 8h6M5 5h6M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Papers
+        </a>
+        <a class="hlink" href="https://github.com/arnab-api" target="_blank">
+          <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          Code
+        </a>
+      </div>
+      <div class="hero-how">
+        Each color = an instrumental goal.<br>
+        Tooltip = oracle's verbalization of the<br>
+        hidden state at that token.
+      </div>
+    </div>
+  </div>
+
+  <!-- ── App ── -->
+  <div id="app">
+
+    <!-- ── Sidebar ── -->
+    <aside id="sidebar">
+      <div class="sb-section">
+        <div class="sb-label">Model</div>
+        <select id="model-select"></select>
+      </div>
+      <div class="sb-section" style="padding-top:10px;">
+        <div class="sb-label">Source</div>
+        <select id="source-select"></select>
+      </div>
+      <div class="sb-tasks">
+        <div class="sb-label">Task</div>
+        <div class="sb-search-wrap">
+          <svg class="sb-search-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <circle cx="5" cy="5" r="3.5" stroke="currentColor" stroke-width="1.3"/>
+            <line x1="7.8" y1="7.8" x2="10.5" y2="10.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          <input id="task-filter" type="search" placeholder="filter tasks…" autocomplete="off" spellcheck="false">
+        </div>
+        <div id="task-count"></div>
+        <ul id="task-list"></ul>
+      </div>
+      <div class="sb-footer">goalscope · patchscope viz · arnab-api.github.io</div>
+    </aside>
+
+    <!-- ── Main ── -->
+    <main id="main">
+      <div id="empty-state">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="20" stroke="#7c6af7" stroke-width="1.5"/>
+          <circle cx="24" cy="24" r="9"  stroke="#7c6af7" stroke-width="1.5"/>
+          <circle cx="24" cy="24" r="3"  fill="#7c6af7"/>
+        </svg>
+        <div>
+          <h3>Select a task to view its GoalScope visualization</h3>
+          <p>Each visualization shows what an activation oracle reads from the model's hidden state at every generated token — revealing the model's instrumental goals before they are implemented.</p>
+        </div>
+      </div>
+      <iframe id="viewer" src="about:blank"></iframe>
+    </main>
+
+  </div><!-- #app -->
+</div><!-- #root -->
+
+<script>
+(function () {
+  const modelSel   = document.getElementById('model-select');
+  const sourceSel  = document.getElementById('source-select');
+  const taskList   = document.getElementById('task-list');
+  const taskFilter = document.getElementById('task-filter');
+  const taskCount  = document.getElementById('task-count');
+  const viewer     = document.getElementById('viewer');
+  const empty      = document.getElementById('empty-state');
+
+  let manifest = {};
+  let currentModel  = null;
+  let currentSource = null;
+  let currentTask   = null;
+
+  function taskDisplay(t) { return t.replace(/_/g, ' '); }
+
+  function iframeUrl(model, source, task) {
+    return `results/${encodeURIComponent(model)}/${encodeURIComponent(source)}/${encodeURIComponent(task)}.html`;
+  }
+
+  function setHash(model, source, task) {
+    history.replaceState(null, '', '#' + encodeURIComponent(model) + '/' + encodeURIComponent(source) + '/' + encodeURIComponent(task));
+  }
+
+  function parseHash() {
+    const raw = window.location.hash.slice(1);
+    if (!raw) return null;
+    const parts = raw.split('/').map(decodeURIComponent);
+    if (parts.length < 3) return null;
+    return { model: parts[0], source: parts[1], task: parts[2] };
+  }
+
+  function loadTask(model, source, task) {
+    currentModel  = model;
+    currentSource = source;
+    currentTask   = task;
+    viewer.src = iframeUrl(model, source, task);
+    empty.classList.add('hidden');
+    setHash(model, source, task);
+    taskList.querySelectorAll('li').forEach(li => li.classList.toggle('selected', li.dataset.task === task));
+    const sel = taskList.querySelector('.selected');
+    if (sel) sel.scrollIntoView({ block: 'nearest' });
+  }
+
+  function updateFilter() {
+    const q = taskFilter.value.trim().toLowerCase();
+    let visible = 0;
+    taskList.querySelectorAll('li').forEach(li => {
+      const match = !q || li.dataset.task.toLowerCase().includes(q);
+      li.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+    const total = taskList.querySelectorAll('li').length;
+    taskCount.textContent = q ? `${visible} / ${total} tasks` : `${total} tasks`;
+  }
+
+  function populateTasks(model, source, selectTask) {
+    const tasks = (manifest[model] && manifest[model][source]) || [];
+    taskList.innerHTML = '';
+    tasks.forEach(t => {
+      const li = document.createElement('li');
+      li.dataset.task = t;
+      li.textContent = taskDisplay(t);
+      li.title = t;
+      li.addEventListener('click', () => loadTask(model, source, t));
+      taskList.appendChild(li);
+    });
+    updateFilter();
+    const target = selectTask && tasks.includes(selectTask) ? selectTask : tasks[0];
+    if (target) loadTask(model, source, target);
+  }
+
+  function populateSources(model, initialSource, initialTask) {
+    sourceSel.innerHTML = '';
+    const sources = Object.keys(manifest[model] || {});
+    sources.forEach(s => {
+      const opt = document.createElement('option');
+      opt.value = s; opt.textContent = s;
+      sourceSel.appendChild(opt);
+    });
+    const target = initialSource && sources.includes(initialSource) ? initialSource : sources[0];
+    sourceSel.value = target;
+    currentSource = target;
+    populateTasks(model, target, initialTask);
+  }
+
+  function populateModels(initialModel, initialSource, initialTask) {
+    modelSel.innerHTML = '';
+    Object.keys(manifest).forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m; opt.textContent = m;
+      modelSel.appendChild(opt);
+    });
+    const target = initialModel && manifest[initialModel] ? initialModel : Object.keys(manifest)[0];
+    modelSel.value = target;
+    currentModel = target;
+    populateSources(target, initialSource, initialTask);
+  }
+
+  modelSel.addEventListener('change',  () => populateSources(modelSel.value, null, null));
+  sourceSel.addEventListener('change', () => populateTasks(currentModel, sourceSel.value, null));
+  taskFilter.addEventListener('input',  updateFilter);
+
+  fetch('manifest.json')
+    .then(r => r.json())
+    .then(data => {
+      manifest = data;
+      const saved = parseHash();
+      populateModels(
+        saved?.model  ?? 'Qwen2.5-Coder-32B-Instruct',
+        saved?.source ?? 'custom',
+        saved?.task   ?? 'atoi',
+      );
+    })
+    .catch(() => { empty.querySelector('p').textContent = 'Could not load manifest.json'; });
+})();
+</script>
+</body>
+</html>

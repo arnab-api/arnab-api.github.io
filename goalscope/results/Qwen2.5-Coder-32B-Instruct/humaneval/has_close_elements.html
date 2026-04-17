@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — has_close_elements (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — has_close_elements (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 85 &#x27;\n&#x27;: ```python
+return any(x &lt; y for x, y in zip(a, b))
+```
+
+```python
+return any(x&lt;y for x,y in zip">↵
+</span><span class="ps-tok token operator" data-tip="pos 86 &#x27;&lt;&#x27;: Sure, here is a brief snippet:
+
+```python
+result = x + y
+```
+
+This line of code adds two numbers, `x` and `">&lt;</span><span class="ps-tok" data-tip="pos 87 &#x27;code&#x27;: Sure, here&#x27;s a brief snippet:
+
+```python
+result = [x for x in range(10) if (lambda n: any(n == [">code</span><span class="ps-tok token operator" data-tip="pos 88 &#x27;&gt;\n&#x27;: ```python
+result = any(abs(x - y) &lt; 1e-9 for x, y in zip(sorted(nums), sorted(nums)[1:]))">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 89 &#x27;def&#x27;: I&#x27;m checking if any two numbers in the list are closer than a given threshold. Here&#x27;s a simple Python function to do that:
+
+```python
+def are">def</span><span class="ps-tok" data-tip="pos 90 &#x27; has&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold."> has</span><span class="ps-tok" data-tip="pos 91 &#x27;_close&#x27;: I&#x27;m checking if the current element is within a specified distance from any previously checked element.">_close</span><span class="ps-tok" data-tip="pos 92 &#x27;_elements&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold. Here&#x27;s a quick example:
+
+```python
+def check_closeness(numbers">_elements</span><span class="ps-tok" data-tip="pos 93 &#x27;(numbers&#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold by iterating through the list and comparing each pair of numbers.">(numbers</span><span class="ps-tok token punctuation" data-tip="pos 94 &#x27;:&#x27;: I&#x27;m comparing elements in a list to check for any pair that meets a specific condition, like being within a certain distance.">:</span><span class="ps-tok" data-tip="pos 95 &#x27; List&#x27;: I&#x27;m comparing values in a list to find if any two numbers are within a certain distance of each other."> List</span><span class="ps-tok" data-tip="pos 96 &#x27;[float&#x27;: I&#x27;m checking the distance between elements to ensure they meet the specified criteria.">[float</span><span class="ps-tok" data-tip="pos 97 &#x27;],&#x27;: I&#x27;m checking if any two numbers in a list are closer than a specified threshold.">],</span><span class="ps-tok" data-tip="pos 98 &#x27; threshold&#x27;: I&#x27;m waiting to see the specific line or threshold value you&#x27;re referring to. Please provide that value."> threshold</span><span class="ps-tok token punctuation" data-tip="pos 99 &#x27;:&#x27;: I&#x27;m comparing two values to check if they are within a specified threshold.">:</span><span class="ps-tok token builtin" data-tip="pos 100 &#x27; float&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold."> float</span><span class="ps-tok token punctuation" data-tip="pos 101 &#x27;)&#x27;: I&#x27;m checking if any two numbers in the list are closer than a given threshold. Here&#x27;s a concise way to do it:
+
+```python
+def has_close">)</span><span class="ps-tok token operator" data-tip="pos 102 &#x27; -&gt;&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold."> -&gt;</span><span class="ps-tok token builtin" data-tip="pos 103 &#x27; bool&#x27;: I&#x27;m checking if any two elements in the list satisfy the condition that their absolute difference is less than a given threshold. Here&#x27;s a concise way to do it"> bool</span><span class="ps-tok token punctuation" data-tip="pos 104 &#x27;:\n&#x27;: I&#x27;m checking if any two elements in the list satisfy the condition where their difference is less than a specified threshold using a nested loop and a conditional statement. Here">:↵
+</span><span class="ps-tok" data-tip="pos 105 &#x27;   &#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold by sorting the list first and then iterating through it with a nested loop to compare">   </span><span class="ps-tok token string" data-tip="pos 106 &#x27; &quot;&quot;&quot;&#x27;: I&#x27;m checking if any two numbers in the list have a difference less than a given threshold without sorting the list first.
+
+```python
+def has_close_elements(nums"> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 107 &#x27;Check&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold.">Check</span><span class="ps-tok token keyword" data-tip="pos 108 &#x27; if&#x27;: I&#x27;m checking if any two numbers in the list are closer than a specified threshold."> if</span><span class="ps-tok" data-tip="pos 109 &#x27; any&#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold."> any</span><span class="ps-tok" data-tip="pos 110 &#x27; two&#x27;: I&#x27;m checking if any two numbers in the list are closer to each other than the specified threshold."> two</span><span class="ps-tok" data-tip="pos 111 &#x27; numbers&#x27;: I&#x27;m checking if any two elements in the list are closer than the specified threshold."> numbers</span><span class="ps-tok token keyword" data-tip="pos 112 &#x27; in&#x27;: I&#x27;m checking if any two numbers in the list are closer to each other than the specified threshold."> in</span><span class="ps-tok" data-tip="pos 113 &#x27; the&#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold."> the</span><span class="ps-tok token builtin" data-tip="pos 114 &#x27; list&#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold."> list</span><span class="ps-tok" data-tip="pos 115 &#x27; are&#x27;: I&#x27;m checking if any two numbers in the list are closer than the specified threshold."> are</span><span class="ps-tok" data-tip="pos 116 &#x27; closer&#x27;: I&#x27;m checking if the current value is within a specified distance from any previously checked value."> closer</span><span class="ps-tok" data-tip="pos 117 &#x27; to&#x27;: I&#x27;m checking if the current value is within a specified distance from another value."> to</span><span class="ps-tok" data-tip="pos 118 &#x27; each&#x27;: I&#x27;m checking if any two numbers in the list are closer to each other than a specified threshold by sorting the list and comparing adjacent pairs."> each</span><span class="ps-tok" data-tip="pos 119 &#x27; other&#x27;: I&#x27;m checking if the current value is less than the specified threshold compared to another value."> other</span><span class="ps-tok" data-tip="pos 120 &#x27; than&#x27;: I&#x27;m checking if the current value is less than the specified threshold."> than</span><span class="ps-tok" data-tip="pos 121 &#x27; the&#x27;: I&#x27;m checking if the current value is within the specified threshold."> the</span><span class="ps-tok" data-tip="pos 122 &#x27; given&#x27;: I&#x27;m checking if the current value is within the specified threshold."> given</span><span class="ps-tok" data-tip="pos 123 &#x27; threshold&#x27;: I&#x27;m checking if the current element is within a specified distance from any other element in the list."> threshold</span><span class="ps-tok" data-tip="pos 124 &#x27;.&quot;&quot;&quot;\n&#x27;: I&#x27;m checking if any two elements in the list are the same without sorting:
+
+```python
+any(x &lt; y for x, y in sorted(zip(sorted(lst">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 125 &#x27;   &#x27;: I&#x27;m sorting the list and then iterating through it with two pointers to find if any pair of numbers is closer than the minimum distance.">   </span><span class="ps-tok" data-tip="pos 126 &#x27; numbers&#x27;: I&#x27;m assuming you want to check if any two numbers in the list are closer than a certain threshold. First, sort the list, then iterate through it with"> numbers</span><span class="ps-tok" data-tip="pos 127 &#x27;.sort&#x27;: I&#x27;m assuming you have a list or array of numbers sorted and are checking consecutive elements for the smallest gap. Here&#x27;s a brief way to do that:
+
+```">.sort</span><span class="ps-tok" data-tip="pos 128 &#x27;()\n&#x27;: I&#x27;m checking if any two numbers in the sorted list are closer than the minimum difference found so far.">()↵
+</span><span class="ps-tok" data-tip="pos 129 &#x27;   &#x27;: I&#x27;m checking if the current pair of numbers is closer than the minimum distance found so far.">   </span><span class="ps-tok token keyword" data-tip="pos 130 &#x27; for&#x27;: I&#x27;m checking the distance between consecutive elements in a sorted list to find if any two numbers are closer than a specified threshold."> for</span><span class="ps-tok" data-tip="pos 131 &#x27; i&#x27;: I&#x27;m checking the distance between consecutive elements in a sorted list to see if any two numbers are closer than the previous pair. If they are, I return true"> i</span><span class="ps-tok token keyword" data-tip="pos 132 &#x27; in&#x27;: I&#x27;m checking the difference between consecutive elements in a sorted list to see if any two adjacent numbers are closer than the previous pair."> in</span><span class="ps-tok token builtin" data-tip="pos 133 &#x27; range&#x27;: I&#x27;m checking the distance between consecutive elements in a sorted list to see if any two numbers are closer than the previous pair. If they are, I return true"> range</span><span class="ps-tok" data-tip="pos 134 &#x27;(len&#x27;: I&#x27;m checking the difference between consecutive elements in a sorted list to find if any two numbers are closer than the previous pair.">(len</span><span class="ps-tok" data-tip="pos 135 &#x27;(numbers&#x27;: I&#x27;m checking the distance between consecutive elements in the list to see if any two elements are closer than the previous one. If they are, I only need to">(numbers</span><span class="ps-tok token punctuation" data-tip="pos 136 &#x27;)&#x27;: I&#x27;m checking the difference between consecutive elements in the list to see if any two elements are closer than the previous one. If I find a pair where the difference">)</span><span class="ps-tok token operator" data-tip="pos 137 &#x27; -&#x27;: I&#x27;m checking the difference between consecutive elements in a sorted list to find if any two elements are closer than the previous pair. If they are, I compare them"> -</span><span class="ps-tok" data-tip="pos 138 &#x27; &#x27;: I&#x27;m checking if the current element in the list is closer than the previous one to another element in the list without iterating through all elements once. This line of"> </span><span class="ps-tok token number" data-tip="pos 139 &#x27;1&#x27;: I&#x27;m checking the distance between consecutive elements in a sorted list to find if any two are closer than the previous pair. If the current element minus the previous one">1</span><span class="ps-tok" data-tip="pos 140 &#x27;):\n&#x27;: Checking if the current element is less than or equal to the next element and if their difference is less than or equal to zero.">):↵
+</span><span class="ps-tok" data-tip="pos 141 &#x27;       &#x27;: Checking if the current element is within the required distance of the next element in a sorted list.">       </span><span class="ps-tok token keyword" data-tip="pos 142 &#x27; if&#x27;: Checking if the difference between consecutive elements is less than a specified threshold."> if</span><span class="ps-tok" data-tip="pos 143 &#x27; abs&#x27;: I&#x27;m comparing two adjacent elements in a sorted list to check if their difference is less than a specified threshold."> abs</span><span class="ps-tok" data-tip="pos 144 &#x27;(numbers&#x27;: I&#x27;m comparing the current element with the next one to check the difference.">(numbers</span><span class="ps-tok" data-tip="pos 145 &#x27;[i&#x27;: I&#x27;m checking the difference between consecutive elements in the list, which is `list[i] - list[i+1]`.">[i</span><span class="ps-tok token punctuation" data-tip="pos 146 &#x27;]&#x27;: I&#x27;m checking the difference between consecutive elements to see if it&#x27;s less than the previous difference. If so, I&#x27;m comparing it to the next element to determine">]</span><span class="ps-tok token operator" data-tip="pos 147 &#x27; -&#x27;: I&#x27;m comparing the current element with the next one to check for proximity."> -</span><span class="ps-tok" data-tip="pos 148 &#x27; numbers&#x27;: I&#x27;m checking the next element to see if it&#x27;s closer than the current one, which helps in finding the nearest pair efficiently."> numbers</span><span class="ps-tok" data-tip="pos 149 &#x27;[i&#x27;: I&#x27;m comparing the current element with the next one to check for proximity.">[i</span><span class="ps-tok token operator" data-tip="pos 150 &#x27; +&#x27;: I&#x27;m checking the next element to see if it&#x27;s close enough to the current one, ensuring the list is sorted or nearly sorted."> +</span><span class="ps-tok" data-tip="pos 151 &#x27; &#x27;: I&#x27;m assuming you&#x27;re looking for an example of a line of code without context, might be 1:
+
+```python
+1 = 1;
+```"> </span><span class="ps-tok token number" data-tip="pos 152 &#x27;1&#x27;: I&#x27;m checking if the current element is less than the previous one and comparing the difference to see if it&#x27;s less than the threshold.">1</span><span class="ps-tok" data-tip="pos 153 &#x27;])&#x27;: I&#x27;m checking if the difference between two values is less than a specified threshold.">])</span><span class="ps-tok token operator" data-tip="pos 154 &#x27; &lt;&#x27;: I&#x27;m checking if the current difference between two values is less than a specified threshold."> &lt;</span><span class="ps-tok" data-tip="pos 155 &#x27; threshold&#x27;: I&#x27;m checking if the current element is less than the previous one."> threshold</span><span class="ps-tok token punctuation" data-tip="pos 156 &#x27;:\n&#x27;: I&#x27;m checking if the current element is less than or equal to the previous one.">:↵
+</span><span class="ps-tok" data-tip="pos 157 &#x27;           &#x27;: I&#x27;m checking for any pair of elements that satisfy the condition of being within a specified threshold distance.">           </span><span class="ps-tok token keyword" data-tip="pos 158 &#x27; return&#x27;: I&#x27;m checking if any two elements in the list are closer than a specified threshold."> return</span><span class="ps-tok token keyword" data-tip="pos 159 &#x27; True&#x27;: I&#x27;m checking if the current element is less than or equal to the previous one."> True</span><span class="ps-tok" data-tip="pos 160 &#x27;\n&#x27;: Checking if the current element is less than the previous one.">↵
+</span><span class="ps-tok" data-tip="pos 161 &#x27;   &#x27;: I&#x27;m checking if any two consecutive elements in the list satisfy the condition of being closer than a specified threshold.">   </span><span class="ps-tok token keyword" data-tip="pos 162 &#x27; return&#x27;: I&#x27;m checking if any two elements in the list are equal."> return</span><span class="ps-tok token keyword" data-tip="pos 163 &#x27; False&#x27;: I&#x27;m checking if two variables are equal."> False</span><span class="ps-tok" data-tip="pos 164 &#x27;\n&#x27;: I&#x27;m assuming you&#x27;re referring to a specific line of code, but it seems like you forgot to include the actual code snippet. Please provide the line or the">↵
+</span><span class="ps-tok" data-tip="pos 165 &#x27;&lt;/&#x27;: I&#x27;m assuming you&#x27;re asking about a specific line of code, but since no code was provided, I&#x27;ll give a generic example:
+
+```python
+def add">&lt;/</span><span class="ps-tok" data-tip="pos 166 &#x27;code&#x27;: Sure, but it seems like you forgot to include the line of code. Here&#x27;s an example assuming you might be asking about a specific operation:
+
+```python">code</span><span class="ps-tok token operator" data-tip="pos 167 &#x27;&gt;&#x27;: Sure, please provide the line of code you&#x27;re referring to.">&gt;</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>

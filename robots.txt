@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /goalscope/
 Sitemap: https://arnab-api.github.io/sitemap.xml

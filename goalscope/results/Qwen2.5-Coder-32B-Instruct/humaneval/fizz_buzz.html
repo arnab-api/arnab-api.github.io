@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — fizz_buzz (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — fizz_buzz (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 90 &#x27;\n&#x27;: ```python
+print(sum([n for n in range(100) if n &lt; 100]))
+```
+```python
+print(sum([">↵
+</span><span class="ps-tok token operator" data-tip="pos 91 &#x27;&lt;&#x27;: Sure, here is the brief code snippet:
+
+```python
+result = x * y
+```
+
+This line of code multiplies `x` by `y">&lt;</span><span class="ps-tok" data-tip="pos 92 &#x27;code&#x27;: Sure, here&#x27;s the code snippet:
+
+```python
+print(sum([int(x) for x in &quot;def count_occurrences():\n return sum([int">code</span><span class="ps-tok token operator" data-tip="pos 93 &#x27;&gt;\n&#x27;: Sure, here&#x27;s a concise function to count occurrences:
+
+```python
+def count_occurrences(n):
+    return str(n).count(&#x27;7&#x27;)
+```
+
+To">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 94 &#x27;def&#x27;: I&#x27;m counting occurrences of the digit &#x27;7&#x27; in numbers up to a given limit, iterating through each number and checking for &#x27;7&#x27;s.">def</span><span class="ps-tok" data-tip="pos 95 &#x27; fizz&#x27;: I&#x27;m checking if the current number contains the digit 7 or is divisible by 7."> fizz</span><span class="ps-tok" data-tip="pos 96 &#x27;_b&#x27;: I&#x27;m checking if the line contains occurrences of &#x27;7&#x27; or &#x27;3&#x27;.">_b</span><span class="ps-tok" data-tip="pos 97 &#x27;uzz&#x27;: I&#x27;m checking if the current number contains the digit &#x27;7&#x27; or is divisible by 7.">uzz</span><span class="ps-tok" data-tip="pos 98 &#x27;(n&#x27;: I&#x27;m iterating through numbers and checking for divisibility, counting matches.">(n</span><span class="ps-tok token punctuation" data-tip="pos 99 &#x27;:&#x27;: I&#x27;m checking the current value of a variable against a condition to determine if it should be included in a count or loop.">:</span><span class="ps-tok token builtin" data-tip="pos 100 &#x27; int&#x27;: I&#x27;m counting occurrences of a number in a given range."> int</span><span class="ps-tok" data-tip="pos 101 &#x27;):\n&#x27;: I&#x27;m iterating through the code and counting occurrences where the specified condition is met.">):↵
+</span><span class="ps-tok" data-tip="pos 102 &#x27;   &#x27;: I&#x27;m counting occurrences of numbers containing &#x27;7&#x27; and checking if they include &#x27;7&#x27;.">   </span><span class="ps-tok token string" data-tip="pos 103 &#x27; &quot;&quot;&quot;&#x27;: I&#x27;m counting occurrences of a specific condition in the given range."> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 104 &#x27;Return&#x27;: I&#x27;m counting occurrences of a specific digit in numbers up to a given limit.">Return</span><span class="ps-tok" data-tip="pos 105 &#x27; the&#x27;: I&#x27;m counting occurrences of a specific digit or number in a range."> the</span><span class="ps-tok" data-tip="pos 106 &#x27; number&#x27;: I&#x27;m counting occurrences of a digit &#x27;7&#x27; in numbers less than 1000."> number</span><span class="ps-tok" data-tip="pos 107 &#x27; of&#x27;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in numbers within a specific range and counting how many times &#x27;7&#x27; appears."> of</span><span class="ps-tok" data-tip="pos 108 &#x27; times&#x27;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in numbers and counting them."> times</span><span class="ps-tok" data-tip="pos 109 &#x27; the&#x27;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in the code."> the</span><span class="ps-tok" data-tip="pos 110 &#x27; digit&#x27;: I&#x27;m not doing anything specific at that line of code; I&#x27;m not even looking at a line of code. You need to provide a specific line of code"> digit</span><span class="ps-tok" data-tip="pos 111 &#x27; &#x27;: Count how many times the digit 7 appears in numbers from 1 to 7, when counting how many 7s appear in 7, 7"> </span><span class="ps-tok token number" data-tip="pos 112 &#x27;7&#x27;: I&#x27;m checking for occurrences of specific patterns in the code.">7</span><span class="ps-tok" data-tip="pos 113 &#x27; appears&#x27;: I&#x27;m checking for occurrences of specific numbers or patterns in the code."> appears</span><span class="ps-tok token keyword" data-tip="pos 114 &#x27; in&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5 and if it&#x27;s less than the given limit."> in</span><span class="ps-tok" data-tip="pos 115 &#x27; integers&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5 and less than the given limit."> integers</span><span class="ps-tok" data-tip="pos 116 &#x27; less&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5."> less</span><span class="ps-tok" data-tip="pos 117 &#x27; than&#x27;: I&#x27;m checking if the number is divisible by 3 or 5."> than</span><span class="ps-tok" data-tip="pos 118 &#x27; n&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5 and outputs it if it meets the criteria."> n</span><span class="ps-tok" data-tip="pos 119 &#x27; which&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5."> which</span><span class="ps-tok" data-tip="pos 120 &#x27; are&#x27;: I&#x27;m checking if the number is divisible by 3 or 5."> are</span><span class="ps-tok" data-tip="pos 121 &#x27; divisible&#x27;: I&#x27;m checking if the current line of the code is divisible by 3 or 5."> divisible</span><span class="ps-tok" data-tip="pos 122 &#x27; by&#x27;: I need to see the specific line or lines of code to determine what they do. Please provide the relevant code snippet."> by</span><span class="ps-tok" data-tip="pos 123 &#x27; &#x27;: I&#x27;m checking if numbers divisible by 1, 11, or 1, 1, 1 (1, 1, 1)"> </span><span class="ps-tok token number" data-tip="pos 124 &#x27;1&#x27;: I&#x27;m checking if the number is divisible by 11 or 13 and then summing numbers that meet the criteria.">1</span><span class="ps-tok token number" data-tip="pos 125 &#x27;1&#x27;: I&#x27;m not doing anything at this line of the code. However, if you provide specific lines or numbers, I can tell you if they are divisible by either">1</span><span class="ps-tok token keyword" data-tip="pos 126 &#x27; or&#x27;: I&#x27;m not doing anything at this line of the code."> or</span><span class="ps-tok" data-tip="pos 127 &#x27; &#x27;: I&#x27;m counting occurrences of the digit &#x27;1&#x27; in a string."> </span><span class="ps-tok token number" data-tip="pos 128 &#x27;1&#x27;: I&#x27;m checking for occurrences of the digit &#x27;3&#x27; in numbers from 1 to 100 and counting how many times it appears.">1</span><span class="ps-tok token number" data-tip="pos 129 &#x27;3&#x27;: I&#x27;m checking if the current line of code meets a specific condition.">3</span><span class="ps-tok" data-tip="pos 130 &#x27;.&quot;&quot;&quot;\n&#x27;: I&#x27;m counting and printing the number of times the digit &#x27;7&#x27; appears in numbers from 0 to 999.
+
+```python
+print(sum(str">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 131 &#x27;   &#x27;: I&#x27;m counting occurrences of the digit 7 in numbers from 1 to a given number, and summing those that contain the digit 7. Here&#x27;s">   </span><span class="ps-tok" data-tip="pos 132 &#x27; count&#x27;: I&#x27;m counting occurrences of &#x27;7&#x27; in numbers from 0 to a specified range."> count</span><span class="ps-tok token operator" data-tip="pos 133 &#x27; =&#x27;: I&#x27;m counting occurrences of &#x27;7&#x27; in numbers from 0 to a given number, specifically those that contain &#x27;7&#x27;."> =</span><span class="ps-tok" data-tip="pos 134 &#x27; &#x27;: 0"> </span><span class="ps-tok token number" data-tip="pos 135 &#x27;0&#x27;: I&#x27;m counting occurrences of &#x27;7&#x27; in numbers from 0 to a given number.">0</span><span class="ps-tok" data-tip="pos 136 &#x27;\n&#x27;: I&#x27;m iterating through each character in the string, checking if it&#x27;s a digit and adding to a count if it is.">↵
+</span><span class="ps-tok" data-tip="pos 137 &#x27;   &#x27;: I&#x27;m checking if a number is divisible by 7 and if it contains the digit &#x27;7&#x27; or if the number is a string representation of that number.">   </span><span class="ps-tok token keyword" data-tip="pos 138 &#x27; for&#x27;: I&#x27;m checking if the current number is divisible by 3 or contains the digit &#x27;3&#x27;, and if so, I&#x27;m counting it."> for</span><span class="ps-tok" data-tip="pos 139 &#x27; i&#x27;: I&#x27;m checking numbers for divisibility and printing them if they meet the criteria."> i</span><span class="ps-tok token keyword" data-tip="pos 140 &#x27; in&#x27;: I&#x27;m checking if a number is divisible by 3 or 5 and printing it if true."> in</span><span class="ps-tok token builtin" data-tip="pos 141 &#x27; range&#x27;: I&#x27;m checking numbers less than the given limit to see if they&#x27;re divisible by 7 or contain the digit 7."> range</span><span class="ps-tok" data-tip="pos 142 &#x27;(n&#x27;: I&#x27;m checking numbers less than the given value to see if they meet the criteria.">(n</span><span class="ps-tok" data-tip="pos 143 &#x27;):\n&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5 and then adding it to a sum if it meets the criteria.">):↵
+</span><span class="ps-tok" data-tip="pos 144 &#x27;       &#x27;: I&#x27;m checking if the number is divisible by 7 and contains the digit &#x27;7&#x27; if it&#x27;s divisible by 7 and contains the digit &#x27;7&#x27;">       </span><span class="ps-tok token keyword" data-tip="pos 145 &#x27; if&#x27;: I&#x27;m checking if the current number is divisible by 3 or 5, and if it is, I print or process it further."> if</span><span class="ps-tok" data-tip="pos 146 &#x27; i&#x27;: I&#x27;m checking if the number is divisible by 3 or 5 and then determining if it&#x27;s divisible by either 3 or 5. If so,"> i</span><span class="ps-tok token operator" data-tip="pos 147 &#x27; %&#x27;: I need to see the specific line of code to determine if it&#x27;s divisible by 11 or 3. Please provide the line of code."> %</span><span class="ps-tok" data-tip="pos 148 &#x27; &#x27;: 11 11 11 11, 1, 1, 1, 1, 1, 1, 1"> </span><span class="ps-tok token number" data-tip="pos 149 &#x27;1&#x27;: I&#x27;m checking if the number is divisible by 11 or 7.">1</span><span class="ps-tok token number" data-tip="pos 150 &#x27;1&#x27;: I&#x27;m not sure without context, but if the line is divisible by 3 or 5, I&#x27;m performing some operation or checking for conditions.">1</span><span class="ps-tok token operator" data-tip="pos 151 &#x27; ==&#x27;: I&#x27;m not doing anything; the line is not divisible by 3 or 5."> ==</span><span class="ps-tok" data-tip="pos 152 &#x27; &#x27;: 0"> </span><span class="ps-tok token number" data-tip="pos 153 &#x27;0&#x27;: I&#x27;m checking if the number is divisible by 3 or 5, or if it&#x27;s divisible by 7. If true, I perform an action or">0</span><span class="ps-tok token keyword" data-tip="pos 154 &#x27; or&#x27;: I&#x27;m checking if the current line is divisible by 3 or 5."> or</span><span class="ps-tok" data-tip="pos 155 &#x27; i&#x27;: I&#x27;m checking if the number is divisible by 13 and if it contains the digit 13."> i</span><span class="ps-tok token operator" data-tip="pos 156 &#x27; %&#x27;: I&#x27;m checking if the current number is divisible by 13 or 17."> %</span><span class="ps-tok" data-tip="pos 157 &#x27; &#x27;: I&#x27;m counting the occurrences of the digit 1 in the string representation of the number 1 is 1 is  thirteen. The number is not directly counted"> </span><span class="ps-tok token number" data-tip="pos 158 &#x27;1&#x27;: I&#x27;m checking if the number 13 contains the digit 3 and counts how many times it appears in the number 13.">1</span><span class="ps-tok token number" data-tip="pos 159 &#x27;3&#x27;: I need to know the specific line of code you&#x27;re referring to in order to provide a brief answer. Please share the line or specify a number it&#x27;s divisible">3</span><span class="ps-tok token operator" data-tip="pos 160 &#x27; ==&#x27;: I&#x27;m checking if the current line is divisible by 0 or if it contains the digit 0. If so, I&#x27;m performing some action (like executing"> ==</span><span class="ps-tok" data-tip="pos 161 &#x27; &#x27;: 0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0"> </span><span class="ps-tok token number" data-tip="pos 162 &#x27;0&#x27;: I&#x27;m checking if the current number contains the digit &#x27;7&#x27; and, if so, I&#x27;m counting how many times &#x27;7&#x27; appears in that number,">0</span><span class="ps-tok token punctuation" data-tip="pos 163 &#x27;:\n&#x27;: I&#x27;m checking if the current line contains the target substring and then counting occurrences of that substring within the line.">:↵
+</span><span class="ps-tok" data-tip="pos 164 &#x27;           &#x27;: I&#x27;m checking if the number contains the digit &#x27;7&#x27; and counting occurrences of &#x27;7&#x27; in numbers that contain &#x27;7&#x27;.">           </span><span class="ps-tok" data-tip="pos 165 &#x27; count&#x27;: I&#x27;m counting occurrences of &#x27;7&#x27; in the string representation of numbers from 0 to the current number."> count</span><span class="ps-tok token operator" data-tip="pos 166 &#x27; +=&#x27;: I&#x27;m checking how many times the digit &#x27;7&#x27; appears in the string representation of the number."> +=</span><span class="ps-tok token builtin" data-tip="pos 167 &#x27; str&#x27;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in the string representation of the number."> str</span><span class="ps-tok" data-tip="pos 168 &#x27;(i&#x27;: I&#x27;m counting occurrences of &#x27;7&#x27; in the string representation of numbers and summing them up.">(i</span><span class="ps-tok" data-tip="pos 169 &#x27;).&#x27;: I&#x27;m counting the occurrences of the digit &#x27;7&#x27; in the string representation of numbers from 0 to the current number and summing them up.">).</span><span class="ps-tok" data-tip="pos 170 &#x27;count&#x27;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in the current line of code.">count</span><span class="ps-tok" data-tip="pos 171 &quot;(&#x27;&quot;: I&#x27;m checking for occurrences of the digit &#x27;7&#x27; in the given line of code.">(&#x27;</span><span class="ps-tok token number" data-tip="pos 172 &#x27;7&#x27;: I&#x27;m not looking at any specific line of code; I need you to point out the line or provide the code snippet.">7</span><span class="ps-tok token string" data-tip="pos 173 &quot;&#x27;)\n&quot;: I&#x27;m not looking at any specific line of code, so I can&#x27;t provide a count. However, if you provide a snippet or specify a range, I">&#x27;)↵
+</span><span class="ps-tok" data-tip="pos 174 &#x27;   &#x27;: I&#x27;m counting occurrences of a specific digit in a range of numbers.">   </span><span class="ps-tok token keyword" data-tip="pos 175 &#x27; return&#x27;: I&#x27;m counting occurrences of a specific digit in a given number."> return</span><span class="ps-tok" data-tip="pos 176 &#x27; count&#x27;: I&#x27;m counting occurrences of a specific character in a string."> count</span><span class="ps-tok" data-tip="pos 177 &#x27;\n&#x27;: I&#x27;m not provided with any specific line of code to analyze. Please provide the line or function you&#x27;re referring to.">↵
+</span><span class="ps-tok" data-tip="pos 178 &#x27;&lt;/&#x27;: I&#x27;m assuming you want me to explain a specific line of code, but no code was provided. Please provide the line of code you&#x27;re referring to.">&lt;/</span><span class="ps-tok" data-tip="pos 179 &#x27;code&#x27;: Sure, here&#x27;s the line of code:
+
+```python
+return result
+```">code</span><span class="ps-tok token operator" data-tip="pos 180 &#x27;&gt;&#x27;: Sure, please provide the specific line of code you&#x27;re referring to.">&gt;</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>

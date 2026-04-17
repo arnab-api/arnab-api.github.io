@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — rolling_max (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — rolling_max (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 87 &#x27;\n&#x27;: ```python
+result = [x for x in range(len(arr)) if (lambda x: [i for i in arr] in [x for x in">↵
+</span><span class="ps-tok token operator" data-tip="pos 88 &#x27;&lt;&#x27;: Sure, here is the code snippet:
+
+```python
+result = x + y
+```
+
+This line of code adds two numbers together and stores the result in">&lt;</span><span class="ps-tok" data-tip="pos 89 &#x27;code&#x27;: Sure, here&#x27;s a brief snippet:
+
+```python
+result = [x for x in range(10) if True]
+```
+
+This line of code">code</span><span class="ps-tok token operator" data-tip="pos 90 &#x27;&gt;\n&#x27;: Sure, here&#x27;s a concise version:
+
+```python
+def process_data(data):
+    result = []
+    for value in data:
+        result.append(max(result +">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 91 &#x27;def&#x27;: I&#x27;m assuming you want to track the maximum value encountered so far in a list of numbers. Here&#x27;s a concise way to do it using a loop:
+
+```">def</span><span class="ps-tok" data-tip="pos 92 &#x27; rolling&#x27;: I&#x27;m tracking the maximum value encountered so far in the list."> rolling</span><span class="ps-tok" data-tip="pos 93 &#x27;_max&#x27;: I&#x27;m maintaining a running maximum of elements in a list up to each point.">_max</span><span class="ps-tok" data-tip="pos 94 &#x27;(numbers&#x27;: I&#x27;m iterating through the list, updating the maximum value found so far at each step.">(numbers</span><span class="ps-tok token punctuation" data-tip="pos 95 &#x27;:&#x27;: I&#x27;m processing each element in the list to perform an operation, such as finding the maximum value.">:</span><span class="ps-tok" data-tip="pos 96 &#x27; List&#x27;: I&#x27;m iterating through elements in a list, updating a variable with the maximum value found so far."> List</span><span class="ps-tok" data-tip="pos 97 &#x27;[int&#x27;: I&#x27;m processing each element to maintain a running maximum.">[int</span><span class="ps-tok" data-tip="pos 98 &#x27;])&#x27;: I need to see the specific line or provide a running example to accurately describe what is happening. Here&#x27;s a concise way to achieve that:
+
+```python
+def">])</span><span class="ps-tok token operator" data-tip="pos 99 &#x27; -&gt;&#x27;: I&#x27;m maintaining a running list of maximum values encountered so far in the sequence."> -&gt;</span><span class="ps-tok" data-tip="pos 100 &#x27; List&#x27;: I&#x27;m tracking the maximum value encountered so far in the list."> List</span><span class="ps-tok" data-tip="pos 101 &#x27;[int&#x27;: I&#x27;m tracking the maximum value encountered so far in a list.">[int</span><span class="ps-tok" data-tip="pos 102 &#x27;]:\n&#x27;: I need to see the specific line or the context of the code to provide an accurate response. Here&#x27;s a brief example:
+
+```python
+def process_data(data">]:↵
+</span><span class="ps-tok" data-tip="pos 103 &#x27;   &#x27;: I&#x27;m maintaining a running maximum using a sliding window approach. Here&#x27;s how it works:
+
+```python
+def running_max(nums):
+    if not nums:">   </span><span class="ps-tok token string" data-tip="pos 104 &#x27; &quot;&quot;&quot;&#x27;: I&#x27;m assuming you want me to analyze a piece of code and provide the action for each line without explicitly showing the code. Here&#x27;s how you can do it"> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 105 &#x27;Generate&#x27;: I&#x27;m assuming you want to track the maximum value encountered so far in a list as it iterates through the elements. Here&#x27;s a brief explanation:
+
+```python">Generate</span><span class="ps-tok" data-tip="pos 106 &#x27; a&#x27;: I&#x27;m tracking the maximum value encountered so far in a list, updating it with each new element."> a</span><span class="ps-tok token builtin" data-tip="pos 107 &#x27; list&#x27;: I&#x27;m tracking the maximum value encountered so far in each position of the list, updating it with the current maximum for each element."> list</span><span class="ps-tok" data-tip="pos 108 &#x27; of&#x27;: I&#x27;m tracking the maximum value encountered so far in each position of the list."> of</span><span class="ps-tok" data-tip="pos 109 &#x27; rolling&#x27;: I&#x27;m tracking the maximum value encountered so far in the list up to each position."> rolling</span><span class="ps-tok" data-tip="pos 110 &#x27; maximum&#x27;: I&#x27;m tracking the maximum value encountered so far in the list up to each position."> maximum</span><span class="ps-tok" data-tip="pos 111 &#x27; elements&#x27;: I&#x27;m tracking the maximum value encountered so far in the list."> elements</span><span class="ps-tok" data-tip="pos 112 &#x27;.&quot;&quot;&quot;\n&#x27;: I need to see the specific line of code to provide an accurate response. However, if you&#x27;re asking for a running explanation, here&#x27;s a brief version:">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 113 &#x27;   &#x27;: To determine what is happening at each point in the list, you can iterate through the list while keeping track of the maximum value found so far. Here&#x27;s a">   </span><span class="ps-tok token keyword" data-tip="pos 114 &#x27; if&#x27;: I&#x27;m tracking the maximum value encountered so far and updating the result list accordingly."> if</span><span class="ps-tok token keyword" data-tip="pos 115 &#x27; not&#x27;: I&#x27;m processing elements of a list, maintaining a running maximum."> not</span><span class="ps-tok" data-tip="pos 116 &#x27; numbers&#x27;: I&#x27;m processing elements to find the maximum value encountered so far."> numbers</span><span class="ps-tok token punctuation" data-tip="pos 117 &#x27;:\n&#x27;: I&#x27;m waiting for you to provide the code so I can analyze it.">:↵
+</span><span class="ps-tok" data-tip="pos 118 &#x27;       &#x27;: I&#x27;m here to help, but it seems like you haven&#x27;t provided any code yet. Could you please share the code snippet you&#x27;re working with?">       </span><span class="ps-tok token keyword" data-tip="pos 119 &#x27; return&#x27;: I&#x27;m not sure what specific line of code you&#x27;re referring to, but if you provide a list of numbers, I can help you generate an empty list to"> return</span><span class="ps-tok" data-tip="pos 120 &#x27; []\n&#x27;: I need to see the code to provide an accurate response. Please share the code snippet or describe the context."> []↵
+</span><span class="ps-tok" data-tip="pos 121 &#x27;    \n&#x27;: I&#x27;m processing each element in the list, maintaining a running maximum value, and appending it to the result list.">    ↵
+</span><span class="ps-tok" data-tip="pos 122 &#x27;   &#x27;: I need to see the code to determine what you&#x27;re asking about. Here&#x27;s a step-by-step approach to solve it:
+
+```python
+def running_maxima">   </span><span class="ps-tok" data-tip="pos 123 &#x27; max&#x27;: I&#x27;m tracking the maximum value encountered so far and updating it with each new element."> max</span><span class="ps-tok" data-tip="pos 124 &#x27;_list&#x27;: I&#x27;m tracking the maximum value encountered so far and updating it as I iterate through the list.">_list</span><span class="ps-tok token operator" data-tip="pos 125 &#x27; =&#x27;: I&#x27;m tracking the maximum value encountered so far and updating it accordingly."> =</span><span class="ps-tok token punctuation" data-tip="pos 126 &#x27; [&#x27;: I&#x27;m tracking the maximum value encountered so far and updating it as I iterate through the list."> [</span><span class="ps-tok" data-tip="pos 127 &#x27;numbers&#x27;: I&#x27;m assuming you&#x27;re asking about the first element of your list. At this point, I&#x27;ll just return that first element since there&#x27;s nothing to compare it">numbers</span><span class="ps-tok token punctuation" data-tip="pos 128 &#x27;[&#x27;: I&#x27;m initializing the first element of the array to be the starting point for comparisons.">[</span><span class="ps-tok token number" data-tip="pos 129 &#x27;0&#x27;: I need to see the specific line of code to provide an accurate response. However, assuming you&#x27;re asking about a sequence of numbers or values, I&#x27;ll start">0</span><span class="ps-tok" data-tip="pos 130 &#x27;]]\n&#x27;: I need to see the specific line of code to provide an accurate response. Here&#x27;s a brief example:
+
+```python
+max_value = float(&#x27;-inf&#x27;)
+result">]]↵
+</span><span class="ps-tok" data-tip="pos 131 &#x27;   &#x27;: I&#x27;m tracking the maximum value encountered so far and updating it for each element in the list.">   </span><span class="ps-tok" data-tip="pos 132 &#x27; current&#x27;: I&#x27;m tracking the maximum value encountered so far and updating it with each new element in the list."> current</span><span class="ps-tok" data-tip="pos 133 &#x27;_max&#x27;: I&#x27;m tracking the maximum value encountered so far.">_max</span><span class="ps-tok token operator" data-tip="pos 134 &#x27; =&#x27;: I&#x27;m tracking the maximum value encountered so far."> =</span><span class="ps-tok" data-tip="pos 135 &#x27; numbers&#x27;: I&#x27;m tracking the maximum value encountered so far."> numbers</span><span class="ps-tok token punctuation" data-tip="pos 136 &#x27;[&#x27;: I&#x27;m tracking the current maximum value.">[</span><span class="ps-tok token number" data-tip="pos 137 &#x27;0&#x27;: I&#x27;m checking the current value against the previous maximum.">0</span><span class="ps-tok token punctuation" data-tip="pos 138 &#x27;]\n&#x27;: I&#x27;m checking if the current element is greater than the previous maximum and updating the maximum accordingly.">]↵
+</span><span class="ps-tok" data-tip="pos 139 &#x27;    \n&#x27;: I&#x27;m processing each element in the list, updating the current maximum as I iterate through it.">    ↵
+</span><span class="ps-tok" data-tip="pos 140 &#x27;   &#x27;: I&#x27;m updating the current maximum for each element in the list, iterating through the elements and keeping track of the highest value encountered so far.">   </span><span class="ps-tok token keyword" data-tip="pos 141 &#x27; for&#x27;: I&#x27;m tracking the maximum value encountered so far in the list."> for</span><span class="ps-tok" data-tip="pos 142 &#x27; num&#x27;: I&#x27;m checking the current value against the previous maximum."> num</span><span class="ps-tok token keyword" data-tip="pos 143 &#x27; in&#x27;: Processing the next element in the list."> in</span><span class="ps-tok" data-tip="pos 144 &#x27; numbers&#x27;: Processing the next element in the list."> numbers</span><span class="ps-tok token punctuation" data-tip="pos 145 &#x27;[&#x27;: I need to see the current line and all subsequent lines from that point onward to determine the maximum value encountered so far in the sequence starting from the first element up">[</span><span class="ps-tok token number" data-tip="pos 146 &#x27;1&#x27;: I&#x27;m processing each element in the list, updating the current maximum as I iterate.">1</span><span class="ps-tok" data-tip="pos 147 &#x27;:]:\n&#x27;: I&#x27;m checking if the current element is greater than the previous maximum and updating the maximum accordingly.">:]:↵
+</span><span class="ps-tok" data-tip="pos 148 &#x27;       &#x27;: I&#x27;m updating the current maximum with the new value if it&#x27;s greater than the previous maximum.">       </span><span class="ps-tok" data-tip="pos 149 &#x27; current&#x27;: Updating the current maximum with the greater value between the previous max and the current element."> current</span><span class="ps-tok" data-tip="pos 150 &#x27;_max&#x27;: Updating the current maximum with the new value if it&#x27;s greater than the previous maximum.">_max</span><span class="ps-tok token operator" data-tip="pos 151 &#x27; =&#x27;: I&#x27;m tracking the maximum value encountered so far."> =</span><span class="ps-tok" data-tip="pos 152 &#x27; max&#x27;: I&#x27;m updating the current maximum value between the previous maximum and the current element."> max</span><span class="ps-tok" data-tip="pos 153 &#x27;(current&#x27;: I&#x27;m updating the current maximum with the new value if it&#x27;s greater.">(current</span><span class="ps-tok" data-tip="pos 154 &#x27;_max&#x27;: I&#x27;m tracking the maximum value encountered so far.">_max</span><span class="ps-tok token punctuation" data-tip="pos 155 &#x27;,&#x27;: I&#x27;m tracking the maximum value encountered so far.">,</span><span class="ps-tok" data-tip="pos 156 &#x27; num&#x27;: I&#x27;m updating the current maximum value and storing it."> num</span><span class="ps-tok token punctuation" data-tip="pos 157 &#x27;)\n&#x27;: Updating the current maximum value and appending it to the result list.">)↵
+</span><span class="ps-tok" data-tip="pos 158 &#x27;       &#x27;: Updating the maximum value found so far.">       </span><span class="ps-tok" data-tip="pos 159 &#x27; max&#x27;: Updating the maximum value encountered so far."> max</span><span class="ps-tok" data-tip="pos 160 &#x27;_list&#x27;: Updating the list with the current maximum value.">_list</span><span class="ps-tok" data-tip="pos 161 &#x27;.append&#x27;: Updating the current maximum value.">.append</span><span class="ps-tok" data-tip="pos 162 &#x27;(current&#x27;: Updating the current maximum value based on the previous one.">(current</span><span class="ps-tok" data-tip="pos 163 &#x27;_max&#x27;: Updating the current maximum value.">_max</span><span class="ps-tok token punctuation" data-tip="pos 164 &#x27;)\n&#x27;: I&#x27;m updating the current value with the maximum between the last computed value and the new element.">)↵
+</span><span class="ps-tok" data-tip="pos 165 &#x27;    \n&#x27;: I&#x27;m processing each element to build a result list.">    ↵
+</span><span class="ps-tok" data-tip="pos 166 &#x27;   &#x27;: I&#x27;m updating the current element in the result list with the maximum value found so far.">   </span><span class="ps-tok token keyword" data-tip="pos 167 &#x27; return&#x27;: I&#x27;m iterating through the list to build a new list with cumulative sums."> return</span><span class="ps-tok" data-tip="pos 168 &#x27; max&#x27;: Updating the maximum value in a list."> max</span><span class="ps-tok" data-tip="pos 169 &#x27;_list&#x27;: I&#x27;m processing each element in the list and building a new list with the results.">_list</span><span class="ps-tok" data-tip="pos 170 &#x27;\n&#x27;: I&#x27;m assuming you&#x27;re asking about a specific line of code, but since no code is provided, here&#x27;s a generic example:
+
+```python
+result = [">↵
+</span><span class="ps-tok" data-tip="pos 171 &#x27;&lt;/&#x27;: I&#x27;m assuming you&#x27;re asking about a specific line of code, but no code was provided. Please provide the line or the context for a more accurate response.">&lt;/</span><span class="ps-tok" data-tip="pos 172 &#x27;code&#x27;: Sure, but it seems like you forgot to include the line of code. Here&#x27;s an example assuming you&#x27;re asking about a simple function:
+
+```python
+def">code</span><span class="ps-tok token operator" data-tip="pos 173 &#x27;&gt;&#x27;: Sure, but it seems like you forgot to provide the line of code. Here&#x27;s a generic example:
+
+```python
+return result
+```
+
+If you meant">&gt;</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>

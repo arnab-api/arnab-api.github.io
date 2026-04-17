@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoalScope — rounded_avg (Qwen2.5-Coder-32B-Instruct)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<style>
+.ps-wrap {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px; line-height: 2.2em;
+    max-width: 960px; margin: 16px auto;
+    background: #2d2d2d; color: #ccc;
+    padding: 16px 20px; border-radius: 8px;
+    white-space: pre-wrap;
+}
+.ps-tok {
+    cursor: default;
+    border-radius: 3px; padding: 1px 0;
+    transition: background 0.12s;
+}
+.ps-tok:hover { background: rgba(255,210,80,0.22); outline: 1px solid rgba(255,210,80,0.4); }
+#ps-tooltip {
+    display: none;
+    position: fixed;
+    background: #1a1a2e; border: 1px solid #555;
+    color: #e8e8e8; font-size: 12px;
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    padding: 6px 10px; border-radius: 5px;
+    white-space: pre-wrap; min-width: 240px; max-width: 440px;
+    z-index: 9999; box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.ps-legend { font-size: 11px; color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="ps-wrap">
+<div class="ps-legend">GoalScope — rounded_avg (Qwen2.5-Coder-32B-Instruct) &mdash; hover a token to see the patched verbalization</div><span class="ps-tok" data-tip="pos 97 &#x27;\n&#x27;: ```python
+return sum(range(n))
+```
+```python
+return sum(range(n))
+```">↵
+</span><span class="ps-tok token operator" data-tip="pos 98 &#x27;&lt;&#x27;: Sure, here is the brief code snippet:
+
+```python
+result = x + y
+```
+
+This line of code adds two numbers together and stores the result">&lt;</span><span class="ps-tok" data-tip="pos 99 &#x27;code&#x27;: Executing the following line of code:
+
+```python
+result = (lambda x: sum(range(x, x+1)))(5)
+```
+
+This is the">code</span><span class="ps-tok token operator" data-tip="pos 100 &#x27;&gt;\n&#x27;: ```python
+result = (sum(range(start, end + 1)) / len(range(start, end + 1)))
+```
+
+This line calculates the average">&gt;↵
+</span><span class="ps-tok token keyword" data-tip="pos 101 &#x27;def&#x27;: To find the value at a specific line of code, you would typically calculate the average of the numbers from the start to the end of the range. Here&#x27;s">def</span><span class="ps-tok" data-tip="pos 102 &#x27; rounded&#x27;: I&#x27;m calculating the average of a range of numbers."> rounded</span><span class="ps-tok" data-tip="pos 103 &#x27;_avg&#x27;: I&#x27;m calculating the average of two integers by summing them and dividing by 2.">_avg</span><span class="ps-tok" data-tip="pos 104 &#x27;(n&#x27;: I&#x27;m calculating the average of two integers, `a` and `b`, using `(a + b) / 2`.">(n</span><span class="ps-tok token punctuation" data-tip="pos 105 &#x27;,&#x27;: I&#x27;m calculating the average of two numbers, `a` and `b`, using integer division: `(a + b) // 2`.">,</span><span class="ps-tok" data-tip="pos 106 &#x27; m&#x27;: Calculating the average by summing the range and dividing by its length."> m</span><span class="ps-tok" data-tip="pos 107 &#x27;):\n&#x27;: I&#x27;m calculating and returning the average of two numbers. Here&#x27;s the concise version:
+
+```python
+return (a + b) // 2
+```">):↵
+</span><span class="ps-tok" data-tip="pos 108 &#x27;   &#x27;: Calculating the average of numbers from `a` to `b` using integer division.">   </span><span class="ps-tok token string" data-tip="pos 109 &#x27; &quot;&quot;&quot;&#x27;: I&#x27;m calculating and returning the average of two numbers. Here&#x27;s the code:
+
+```python
+def average(a, b):
+    return (a + b)"> &quot;&quot;&quot;</span><span class="ps-tok" data-tip="pos 110 &#x27;Compute&#x27;: I&#x27;m calculating the average of two integers and returning the result. Here&#x27;s the code:
+
+```python
+def average(a, b):
+    return (a +">Compute</span><span class="ps-tok" data-tip="pos 111 &#x27; the&#x27;: Calculating the average of two integers by summing them and dividing by 2."> the</span><span class="ps-tok" data-tip="pos 112 &#x27; average&#x27;: I&#x27;m calculating the average of two integers and returning the result rounded to the nearest integer."> average</span><span class="ps-tok" data-tip="pos 113 &#x27; of&#x27;: I&#x27;m calculating the average of numbers from `a` to `b` inclusive."> of</span><span class="ps-tok" data-tip="pos 114 &#x27; integers&#x27;: I&#x27;m calculating the sum of numbers from `a` to `b` inclusive and then dividing by the count of numbers to find the average."> integers</span><span class="ps-tok token keyword" data-tip="pos 115 &#x27; from&#x27;: I&#x27;m calculating the sum of numbers from `a` to `b` inclusive."> from</span><span class="ps-tok" data-tip="pos 116 &#x27; n&#x27;: I&#x27;m processing and calculating the sum from the start number to the end number, inclusive."> n</span><span class="ps-tok" data-tip="pos 117 &#x27; to&#x27;: I&#x27;m calculating the sum of numbers from `a` to `b`, inclusive, and then dividing by 2 to find the average."> to</span><span class="ps-tok" data-tip="pos 118 &#x27; m&#x27;: Calculating the average and returning it."> m</span><span class="ps-tok" data-tip="pos 119 &#x27; inclusive&#x27;: I&#x27;m calculating the average and returning an integer result."> inclusive</span><span class="ps-tok" data-tip="pos 120 &#x27;.&quot;&quot;&quot;\n&#x27;: I&#x27;m calculating and returning the average of two numbers in a single line:
+
+```python
+return (a + b) // 2
+```
+
+This assumes">.&quot;&quot;&quot;↵
+</span><span class="ps-tok" data-tip="pos 121 &#x27;   &#x27;: Calculating the average by summing all numbers from `start` to `end` and dividing by the count of numbers, then returning the integer division result.">   </span><span class="ps-tok token keyword" data-tip="pos 122 &#x27; return&#x27;: To provide a brief and accurate answer, I&#x27;ll calculate the average using integer division:
+
+```python
+result = (start + end) // 2
+``"> return</span><span class="ps-tok" data-tip="pos 123 &#x27; round&#x27;: I&#x27;m calculating the average by summing the numbers and dividing by the count."> round</span><span class="ps-tok" data-tip="pos 124 &#x27;((&#x27;: I&#x27;m calculating the average of numbers from `a` to `b` inclusive by summing them and dividing by the count of numbers. The expression would be">((</span><span class="ps-tok" data-tip="pos 125 &#x27;n&#x27;: I&#x27;m calculating the sum of all numbers from the start to the end value, inclusive, and then dividing by the count of numbers to find the average. The">n</span><span class="ps-tok token operator" data-tip="pos 126 &#x27; +&#x27;: I&#x27;m calculating the sum of all numbers from the start to the end value, then dividing by 2 to find the average, and finally adding the start and"> +</span><span class="ps-tok" data-tip="pos 127 &#x27; m&#x27;: I&#x27;m calculating the average by summing the numbers from the start to the end and dividing by the count of numbers."> m</span><span class="ps-tok token punctuation" data-tip="pos 128 &#x27;)&#x27;: To provide a brief and accurate answer, I&#x27;ll assume you&#x27;re asking for the average of all integers from the start to the end value, inclusive. The calculation">)</span><span class="ps-tok token operator" data-tip="pos 129 &#x27; /&#x27;: Calculating the average by summing the numbers and dividing by 2."> /</span><span class="ps-tok" data-tip="pos 130 &#x27; &#x27;: Calculating and outputs the average of two numbers."> </span><span class="ps-tok token number" data-tip="pos 131 &#x27;2&#x27;: Calculating the average by summing the numbers and dividing by 2.">2</span><span class="ps-tok token punctuation" data-tip="pos 132 &#x27;)\n&#x27;: Executing the current line of code directly.">)↵
+</span><span class="ps-tok" data-tip="pos 133 &#x27;&lt;/&#x27;: I&#x27;m assuming you want me to explain what a specific line of code does, but no line of code was provided. Here&#x27;s a generic example:
+
+```python">&lt;/</span><span class="ps-tok" data-tip="pos 134 &#x27;code&#x27;: Sure, but it seems like you forgot to include the line of code. Here&#x27;s a brief example assuming you might be asking for a simple operation:
+
+```python">code</span><span class="ps-tok token operator" data-tip="pos 135 &#x27;&gt;\n\n&#x27;: Sure, but it seems like you might be looking for a specific line of code without providing it. Here&#x27;s a generic example assuming you want a single line that">&gt;↵
+↵
+</span>
+</div>
+
+<div id="ps-tooltip"></div>
+<script>
+(function() {
+    var tip = document.getElementById('ps-tooltip');
+    document.querySelectorAll('.ps-tok').forEach(function(tok) {
+        tok.addEventListener('mouseenter', function(e) {
+            tip.textContent = tok.dataset.tip;
+            tip.style.display = 'block';
+            _moveTip(e);
+        });
+        tok.addEventListener('mousemove', _moveTip);
+        tok.addEventListener('mouseleave', function() {
+            tip.style.display = 'none';
+        });
+    });
+    function _moveTip(e) {
+        var x = e.clientX + 14, y = e.clientY - 36;
+        var tw = tip.offsetWidth, th = tip.offsetHeight;
+        if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - 14;
+        if (y - th < 8)                      y = e.clientY + 20;
+        tip.style.left = x + 'px';
+        tip.style.top  = y + 'px';
+    }
+})();
+</script>
+
+</body>
+</html>
