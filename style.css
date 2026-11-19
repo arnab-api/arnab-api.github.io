@@ -90,6 +90,8 @@ main > section:first-child > p { text-align: justify; hyphens: auto; }
 /* ---- news */
 .news { list-style: none; margin: 0; padding: 0; }
 .news li { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr); gap: 1rem; margin: 0 0 .85rem; }
+.news .sub-news { list-style: disc; margin: .3rem 0 0; padding-left: 1.3rem; }
+.news .sub-news li { display: list-item; margin: .15rem 0 0; }
 .news time { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--muted); }
 .older { margin-top: .4rem; }
 .older summary { cursor: pointer; color: var(--link); margin-bottom: .9rem; }
@@ -149,4 +151,5 @@ footer a { color: var(--muted); }
   .profile { flex-direction: column; align-items: flex-start; }
   main > section:first-child > p { text-align: left; }
   .news li { grid-template-columns: 1fr; gap: 0; }
+  .news .sub-news li { display: list-item; }
 }
